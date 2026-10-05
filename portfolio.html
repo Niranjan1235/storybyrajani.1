@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Portfolio | Stories by Rajani | Wedding Photography &amp; Films in Hyderabad</title>
+<meta name="description" content="Browse the Stories by Rajani portfolio by event: weddings, pre-wedding, engagements, haldi, mehendi, sangeeth, receptions, corporate and portraits. Hyderabad.">
+<meta name="theme-color" content="#000000">
+<meta property="og:title" content="Portfolio | Stories by Rajani">
+<meta property="og:description" content="Every event, one story at a time. Wedding photography and cinematic films in Hyderabad.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%23000'/%3E%3Ctext x='32' y='43' font-size='34' text-anchor='middle' fill='%23fff' font-family='Georgia' font-style='italic'%3ES%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,400;1,500;1,600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --blush:#ffffff; --cream:#f5f5f5; --rose:#bdbdbd; --ink:#0a0a0a; --hh:78px;
+  --serif:'Cormorant Garamond',Georgia,serif; --sans:'Jost','Helvetica Neue',Arial,sans-serif;
+  box-sizing:border-box;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--ink);color:var(--blush);font-family:var(--sans);overflow-x:hidden}
+body.lock{overflow:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+
+/* ---------- HEADER (same as main site, compact) ---------- */
+header{position:fixed;top:0;left:0;right:0;z-index:50;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;
+  padding:calc(16px + env(safe-area-inset-top,0px)) clamp(20px,5vw,100px) 16px;
+  background:linear-gradient(180deg,#3a3a3a 0%,#161616 48%,#000 52%,#111 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,.28),0 6px 24px rgba(0,0,0,.35)}
+.logo{text-align:center;text-decoration:none;color:var(--blush);line-height:1}
+.logo b{display:block;font-family:var(--sans);font-weight:300;font-size:30px;letter-spacing:.06em}
+.logo small{display:block;margin-top:3px;font-size:7px;letter-spacing:.28em;font-weight:500}
+.hl,.hr{font-family:var(--serif);font-style:italic;font-size:clamp(17px,1.7vw,24px);color:var(--blush);text-decoration:none;letter-spacing:.02em;border-bottom:1px solid transparent;transition:.3s;width:max-content}
+.hl{justify-self:start}.hr{justify-self:end}
+.hl:hover,.hr:hover{border-color:var(--blush)}
+@media(max-width:600px){.logo small{letter-spacing:.2em;font-size:7px}.hl span{display:none}}
+
+/* ---------- COMMON ---------- */
+.kick{font-size:12px;letter-spacing:.38em;text-transform:uppercase;font-weight:500;margin-bottom:22px;display:inline-flex;align-items:center;gap:14px}
+.kick::before,.kick::after{content:"";width:34px;height:1px;background:currentColor}
+.btn{display:inline-flex;align-items:center;gap:14px;padding:18px 40px;font-family:var(--sans);font-size:12px;font-weight:500;letter-spacing:.3em;text-transform:uppercase;text-decoration:none;color:#fff;border-radius:60px;border:0;cursor:pointer;
+  background:linear-gradient(180deg,#3a3a3a 0%,#161616 48%,#000 52%,#111 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,.3),0 14px 30px -10px rgba(0,0,0,.6);transition:transform .4s,box-shadow .4s}
+.btn span{display:inline-block;transition:transform .4s;font-size:15px;letter-spacing:0}
+.btn:hover{transform:translateY(-3px);box-shadow:inset 0 1px 0 rgba(255,255,255,.35),0 20px 36px -12px rgba(0,0,0,.7)}
+.btn:hover span{transform:translate(4px,-4px)}
+.reveal{opacity:0;transform:translateY(34px);transition:opacity 1s,transform 1s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
+
+/* ---------- HERO ---------- */
+.hero{position:relative;height:100vh;height:100svh;min-height:660px;max-height:1100px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:calc(var(--hh) + 40px) 6vw 80px;overflow:hidden;isolation:isolate;background:radial-gradient(ellipse at 50% 30%,#2e2e2e,#0c0c0c 58%,#000)}
+.hs{position:absolute;inset:-5%;z-index:-4;transform:translate3d(calc(var(--mx,0)*-14px),calc(var(--my,0)*-9px + var(--sy,0)*1px),0);transition:transform .5s cubic-bezier(.2,.7,.2,1);will-change:transform}
+.sl{position:absolute;inset:0;background:center/cover no-repeat;opacity:0;transition:opacity 1.8s ease;filter:saturate(.9) brightness(.62) contrast(1.05)}
+.sl.on{opacity:1}
+.sl.kb{animation:kb 9s cubic-bezier(.25,.5,.3,1) forwards}
+@keyframes kb{from{transform:scale(1.16) translate(1.2%,.8%)}to{transform:scale(1.02) translate(0,0)}}
+.hshade{position:absolute;inset:0;z-index:-3;pointer-events:none;background:radial-gradient(ellipse at 50% 46%,rgba(0,0,0,.18) 0%,rgba(0,0,0,.62) 58%,rgba(0,0,0,.92) 100%),linear-gradient(180deg,rgba(0,0,0,.55) 0%,transparent 28%,transparent 60%,#0a0a0a 100%)}
+.hgrain{position:absolute;inset:-50%;z-index:-2;pointer-events:none;opacity:.1;mix-blend-mode:screen;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .9 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");animation:gr .7s steps(1) infinite}
+@keyframes gr{0%{transform:translate(0,0)}20%{transform:translate(-4%,3%)}40%{transform:translate(3%,-5%)}60%{transform:translate(-2%,6%)}80%{transform:translate(5%,2%)}100%{transform:translate(0,0)}}
+/* viewfinder frame */
+.vfw{position:absolute;inset:calc(var(--hh) + 16px) clamp(14px,2.4vw,34px) 66px;z-index:1;pointer-events:none;opacity:0;animation:fadeIn 1.2s .6s forwards}
+.vfw i{position:absolute;width:30px;height:30px;border:1.5px solid rgba(255,255,255,.85)}
+.vfw .a{top:0;left:0;border-right:0;border-bottom:0}.vfw .b{top:0;right:0;border-left:0;border-bottom:0}
+.vfw .c{bottom:0;left:0;border-right:0;border-top:0}.vfw .d{bottom:0;right:0;border-left:0;border-top:0}
+.vfw .m{position:absolute;top:14px;font-size:10px;letter-spacing:.26em;text-transform:uppercase;color:rgba(255,255,255,.8);display:flex;align-items:center;gap:9px;font-variant-numeric:tabular-nums}
+.vfw .m.l{left:44px}.vfw .m.r{right:44px}
+.vfw .m u{width:7px;height:7px;border-radius:50%;background:#fff;animation:blink 1.1s steps(2) infinite}
+@keyframes blink{50%{opacity:.15}}
+@keyframes fadeIn{to{opacity:1}}
+/* floating print cards */
+.fl{position:absolute;inset:0;z-index:0;pointer-events:none}
+.fc{position:absolute;pointer-events:auto;cursor:pointer;width:clamp(120px,12.5vw,215px);transform:translate3d(calc(var(--mx,0)*var(--d)*1px),calc(var(--my,0)*var(--d)*1px + var(--sy,0)*var(--s,.2)*-1px),0) rotate(var(--r));transition:transform .6s cubic-bezier(.2,.7,.2,1);opacity:0;animation:fadeIn 1.2s var(--dl) forwards}
+.fc .fi{background:#fff;color:#0a0a0a;padding:7px 7px 30px;border-radius:2px;box-shadow:0 30px 60px -18px rgba(0,0,0,.85);animation:bob 7s ease-in-out infinite;animation-delay:var(--dl);transition:transform .5s}
+.fc:hover .fi{transform:scale(1.06) rotate(-1.5deg)}
+.fc img{width:100%;aspect-ratio:4/5;object-fit:cover;background:#ddd}
+.fc span{position:absolute;left:0;right:0;bottom:6px;text-align:center;font:italic 500 16px var(--serif)}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+.fc1{left:clamp(24px,5vw,90px);top:26%;--d:16;--r:-6deg;--dl:1.1s;--s:.12}
+.fc2{left:clamp(110px,13vw,250px);bottom:17%;--d:-10;--r:4deg;--dl:1.4s;--s:.24;width:clamp(100px,9.5vw,165px)}
+.fc3{right:clamp(24px,5vw,90px);top:22%;--d:-14;--r:5deg;--dl:1.25s;--s:.16}
+.fc4{right:clamp(110px,13vw,250px);bottom:19%;--d:12;--r:-4deg;--dl:1.55s;--s:.28;width:clamp(100px,9.5vw,165px)}
+@media(max-width:1100px){.fl{display:none}}
+/* copy */
+.hc{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;max-width:980px;transform:translate3d(0,calc(var(--sy,0)*-.12px),0);opacity:calc(1 - var(--sy,0)/720)}
+.hero .kick{opacity:0;animation:up 1s .15s forwards}
+.hero h1{font-family:var(--serif);font-weight:500;font-size:clamp(46px,min(9.4vw,14vh),148px);line-height:1.02;letter-spacing:.005em;text-shadow:0 4px 40px rgba(0,0,0,.7)}
+.hero h1 .ln{display:block;overflow:hidden;padding:.1em .14em .26em;margin:-.1em -.14em -.26em}
+.hero h1 .ln>span{display:block;transform:translateY(110%);animation:rise 1.2s cubic-bezier(.2,.8,.2,1) forwards}
+.hero h1 .ln:nth-child(1)>span{animation-delay:.3s}.hero h1 .ln:nth-child(2)>span{animation-delay:.48s}
+.hero h1 em{font-style:italic;font-weight:400}
+@keyframes rise{to{transform:none}}
+.rw{display:inline-block;position:relative;overflow:hidden;vertical-align:bottom;padding:0 .08em .08em;margin:0 -.08em -.08em}
+.rw b{display:inline-block;font-weight:400;font-style:italic;transition:transform .55s cubic-bezier(.7,0,.2,1),opacity .4s}
+.rw b.out{transform:translateY(-105%);opacity:0}.rw b.pre{transform:translateY(105%);opacity:0;transition:none}
+.hero p.lead{max-width:520px;margin:26px auto 0;font-weight:300;font-size:clamp(15px,1.35vw,18px);line-height:1.75;opacity:0;animation:up 1s .85s forwards;color:rgba(255,255,255,.85);text-shadow:0 2px 20px rgba(0,0,0,.8)}
+.hbtn{margin-top:34px;opacity:0;animation:up 1s 1s forwards;background:#fff;color:#000;box-shadow:0 14px 34px -10px rgba(255,255,255,.3)}
+.pills{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:30px;max-width:900px;opacity:0;animation:up 1s 1.15s forwards}
+.pills button{background:rgba(0,0,0,.35);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.35);color:#fff;border-radius:60px;padding:9px 16px;font:500 10px var(--sans);letter-spacing:.24em;text-transform:uppercase;cursor:pointer;transition:background .3s,color .3s,border-color .3s,transform .3s}
+.pills button{display:inline-flex;align-items:center;gap:10px;padding:6px 18px 6px 6px}
+.pills button img{width:38px;height:38px;border-radius:50%;object-fit:cover;flex:none;border:1px solid rgba(255,255,255,.5);filter:saturate(.95)}
+.pills button em{font-style:normal;opacity:.55;letter-spacing:.1em;margin-left:2px}
+.pills button:hover,.pills button.on{background:#fff;color:#0a0a0a;border-color:#fff;transform:translateY(-2px)}
+.pills button.on img{border-color:#000}
+.pills button.on{box-shadow:0 10px 30px -8px rgba(255,255,255,.45)}
+@keyframes up{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+/* now showing + stats */
+.hnow{position:absolute;z-index:2;left:clamp(30px,4.2vw,76px);bottom:34px;display:flex;align-items:flex-end;gap:18px;opacity:0;animation:fadeIn 1s 1.3s forwards;text-align:left}
+.hnow .n{font-family:var(--serif);font-style:italic;font-size:clamp(40px,4.4vw,64px);line-height:.85;font-variant-numeric:tabular-nums}
+.hnow .n small{font-size:.38em;opacity:.65;margin-left:.15em}
+.hnow .t{padding-bottom:3px;min-width:130px}
+.hnow .t small{display:block;font-size:9px;letter-spacing:.32em;text-transform:uppercase;opacity:.65}
+.hnow .t b{display:block;font:italic 500 19px var(--serif);margin-top:5px;transition:opacity .4s}
+.hnow .bar{height:1px;background:rgba(255,255,255,.28);margin-top:9px;position:relative;overflow:hidden}
+.hnow .bar i{position:absolute;inset:0;background:#fff;transform:scaleX(0);transform-origin:left}
+.hnow .bar i.go{animation:prog var(--pd,6s) linear forwards}
+@keyframes prog{to{transform:scaleX(1)}}
+.hstats{position:absolute;z-index:2;right:clamp(30px,4.2vw,76px);bottom:34px;display:flex;gap:clamp(22px,3vw,46px);opacity:0;animation:fadeIn 1s 1.3s forwards;text-align:right}
+.hstats b{display:block;font-family:var(--serif);font-style:italic;font-weight:400;font-size:clamp(30px,3.2vw,46px);line-height:1}
+.hstats small{display:block;margin-top:6px;font-size:9px;letter-spacing:.28em;text-transform:uppercase;opacity:.7}
+/* ticker */
+.tick{position:absolute;left:0;right:0;bottom:0;z-index:2;height:64px;display:flex;align-items:center;overflow:hidden;border-top:1px solid rgba(255,255,255,.16);background:linear-gradient(180deg,rgba(0,0,0,.35),rgba(0,0,0,.7));backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px)}
+.tk{display:flex;flex:none;gap:0;white-space:nowrap;animation:tk 46s linear infinite;will-change:transform}
+.tick:hover .tk{animation-play-state:paused}
+.tk span{font:italic 400 clamp(24px,2.4vw,34px) var(--serif);padding:0 clamp(18px,2vw,30px);color:transparent;-webkit-text-stroke:1px rgba(255,255,255,.7);display:flex;align-items:center;gap:clamp(36px,4vw,60px)}
+.tk span::after{content:"";width:8px;height:8px;border-radius:50%;background:#fff;opacity:.8}
+@keyframes tk{to{transform:translateX(-50%)}}
+@media(max-width:900px){.hstats{display:none}.hnow{left:22px;bottom:80px}}
+@media(max-width:600px){
+  .hero{padding-bottom:110px;min-height:620px}
+  .pills{gap:8px;margin-top:24px}.pills button{padding:4px 12px 4px 4px;font-size:9px;letter-spacing:.18em}.pills button img{width:30px;height:30px}
+  .vfw .m.r{display:none}.vfw .m.l{left:14px}
+  .hnow{bottom:76px}.hnow .t b{font-size:16px}.hnow .t{min-width:100px}
+  .tick{height:54px}
+}
+@media(prefers-reduced-motion:reduce){.sl.kb,.hgrain,.fc .fi,.tk{animation:none}}
+
+/* ---------- FILTER BAR (white band, like the site's section heads) ---------- */
+.filt{position:sticky;top:var(--hh);z-index:40;background:#fff;color:#0a0a0a;border-bottom:1px solid rgba(0,0,0,.12);box-shadow:0 10px 30px -18px rgba(0,0,0,.5)}
+.filt .in{display:flex;gap:10px;overflow-x:auto;padding:16px clamp(16px,4vw,60px);scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.filt .in::-webkit-scrollbar{display:none}
+.filt .in>:first-child{margin-left:auto}.filt .in>:last-child{margin-right:auto}
+.chip{flex:none;font:500 11px var(--sans);letter-spacing:.22em;text-transform:uppercase;color:#0a0a0a;background:transparent;border:1px solid rgba(0,0,0,.25);border-radius:60px;padding:12px 20px;cursor:pointer;white-space:nowrap;transition:background .3s,color .3s,border-color .3s,transform .3s}
+.chip sup{font-size:9px;letter-spacing:.05em;margin-left:6px;opacity:.55;vertical-align:top}
+.chip:hover{border-color:#0a0a0a;transform:translateY(-2px)}
+.chip[aria-selected="true"]{color:#fff;border-color:#000;background:linear-gradient(180deg,#3a3a3a 0%,#161616 48%,#000 52%,#111 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,.3)}
+.chip.empty{border-style:dashed;opacity:.65}
+
+/* ---------- GALLERY ---------- */
+.gal{background:var(--ink);padding:clamp(50px,7vw,100px) clamp(14px,4vw,64px) clamp(60px,8vw,110px);min-height:60vh;scroll-margin-top:calc(var(--hh) + 70px)}
+.gin{max-width:1500px;margin:0 auto}
+.evs{margin-bottom:clamp(60px,8vw,120px)}
+.evs:last-child{margin-bottom:0}
+.evh{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-bottom:clamp(24px,3vw,40px);padding-bottom:18px;border-bottom:1px solid rgba(255,255,255,.18)}
+.evh .no{font-size:11px;letter-spacing:.34em;opacity:.6;margin-bottom:10px;display:block}
+.evh h2{font-family:var(--serif);font-weight:500;font-size:clamp(34px,5vw,68px);line-height:1}
+.evh h2 em{font-weight:400}
+.evh .ct{font-size:11px;letter-spacing:.3em;text-transform:uppercase;opacity:.65;display:flex;align-items:center;gap:18px}
+.vall{background:none;border:1px solid rgba(255,255,255,.4);color:#fff;border-radius:60px;padding:11px 20px;font:500 11px var(--sans);letter-spacing:.24em;text-transform:uppercase;cursor:pointer;transition:background .3s,color .3s;opacity:1}
+.vall:hover{background:#fff;color:#0a0a0a}
+.mas{display:flex;gap:14px;align-items:flex-start}
+.mcol{flex:1;min-width:0;display:flex;flex-direction:column;gap:14px}
+.mas .ph{margin:0}
+@media(max-width:420px){.mas,.mcol{gap:8px}}
+.ph{position:relative;break-inside:avoid;margin:0 0 14px;overflow:hidden;border-radius:4px;background:#161616;min-height:170px;cursor:zoom-in;opacity:0;transform:translateY(26px);transition:opacity .9s,transform .9s cubic-bezier(.2,.7,.2,1);outline-offset:3px}
+.ph.in{opacity:1;transform:none}
+.ph.ok{min-height:0}
+.ph.bad{display:none}
+body.admin .ph.bad{display:block;min-height:120px}
+.ph img{width:100%;height:auto;opacity:0;transition:opacity .8s,transform 1.1s cubic-bezier(.2,.7,.2,1)}
+.ph img.ld{opacity:1}
+.ph:hover img{transform:scale(1.05)}
+.ph::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(0,0,0,.72));opacity:0;transition:opacity .5s;pointer-events:none}
+.ph:hover::after,.ph:focus-visible::after{opacity:1}
+.ph figcaption{position:absolute;left:16px;bottom:14px;z-index:1;font-family:var(--serif);font-style:italic;font-size:21px;opacity:0;transform:translateY(8px);transition:.5s;pointer-events:none}
+.ph .pl{position:absolute;right:14px;top:14px;z-index:1;width:36px;height:36px;border-radius:50%;border:1px solid rgba(255,255,255,.8);display:flex;align-items:center;justify-content:center;font-size:18px;line-height:1;opacity:0;transform:scale(.7);transition:.5s;pointer-events:none}
+.ph:hover figcaption,.ph:hover .pl,.ph:focus-visible figcaption,.ph:focus-visible .pl{opacity:1;transform:none}
+@media(hover:none){.ph figcaption{opacity:1;transform:none;font-size:17px;left:12px;bottom:10px}.ph::after{opacity:1}.ph .pl{display:none}}
+.none{border:1px dashed rgba(255,255,255,.3);border-radius:6px;padding:46px 20px;text-align:center;font-family:var(--serif);font-style:italic;font-size:24px;opacity:.75}
+.fade{animation:gfade .7s both}
+@keyframes gfade{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+
+/* ---------- LIGHTBOX ---------- */
+.lb{position:fixed;inset:0;z-index:100;background:rgba(5,5,5,.96);display:flex;align-items:center;justify-content:center;opacity:0;visibility:hidden;transition:opacity .4s,visibility 0s .4s;touch-action:pan-y}
+.lb.open{opacity:1;visibility:visible;transition-delay:0s}
+.lb img{max-width:min(92vw,1700px);max-height:80vh;max-height:80svh;object-fit:contain;border-radius:3px;box-shadow:0 40px 100px -20px #000;transition:opacity .35s,transform .45s cubic-bezier(.2,.7,.2,1)}
+.lb img.sw{opacity:0;transform:scale(.97)}
+.lb .top{position:absolute;top:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;padding:calc(18px + env(safe-area-inset-top,0px)) clamp(16px,3vw,40px) 0}
+.lb .cap{font-family:var(--serif);font-style:italic;font-size:clamp(20px,2vw,28px)}
+.lb .cap small{display:block;font:400 10px var(--sans);letter-spacing:.3em;text-transform:uppercase;opacity:.6;margin-top:4px;font-style:normal}
+.lb button{background:none;border:1px solid rgba(255,255,255,.35);color:#fff;width:46px;height:46px;border-radius:50%;cursor:pointer;font-size:22px;line-height:1;display:flex;align-items:center;justify-content:center;transition:background .3s,color .3s}
+.lb button:hover{background:#fff;color:#0a0a0a}
+.lb .nav{position:absolute;top:50%;transform:translateY(-50%)}
+.lb .pv{left:clamp(10px,2.5vw,40px)}.lb .nx{right:clamp(10px,2.5vw,40px)}
+.lb .bot{position:absolute;bottom:calc(22px + env(safe-area-inset-bottom,0px));left:0;right:0;text-align:center;font-size:11px;letter-spacing:.34em;opacity:.7;font-variant-numeric:tabular-nums}
+@media(max-width:600px){.lb .nav{top:auto;bottom:calc(14px + env(safe-area-inset-bottom,0px));transform:none;width:42px;height:42px}.lb .pv{left:16px}.lb .nx{right:16px}}
+
+/* ---------- FOOTER (same as main site) ---------- */
+.foot{position:relative;color:#fff;background:radial-gradient(ellipse at 80% 0%,#333,#101010 50%,#000);padding:clamp(70px,8vw,120px) clamp(20px,6vw,100px) 30px;overflow:hidden;border-top:1px solid rgba(255,255,255,.1)}
+.fcta{max-width:1280px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;gap:30px;flex-wrap:wrap;padding-bottom:clamp(44px,5vw,70px);border-bottom:1px solid rgba(255,255,255,.2)}
+.fcta h2{font-family:var(--serif);font-weight:500;font-size:clamp(40px,6.2vw,92px);line-height:1}
+.fcta h2 em{font-weight:400}
+.fcta .btn{background:#fff;color:#000;box-shadow:0 14px 30px -10px rgba(255,255,255,.25)}
+.fbar{max-width:1280px;margin:0 auto;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-top:26px;font-size:12px;letter-spacing:.12em;opacity:.75}
+.fbar a{color:#fff;text-decoration:none;margin-left:18px}
+.fbar a:first-child{margin-left:0}
+.fbar .own{opacity:.4;background:none;border:0;color:#fff;font:inherit;letter-spacing:inherit;cursor:pointer;margin-left:18px}
+.fbar .own:hover{opacity:1}
+
+/* ---------- OWNER PANEL ---------- */
+.admb,.adm{display:none}
+body.admin .admb{display:flex}
+.admb{position:fixed;z-index:60;right:clamp(16px,2.4vw,34px);bottom:calc(clamp(16px,2.4vw,34px) + env(safe-area-inset-bottom,0px));align-items:center;gap:10px;background:#fff;color:#0a0a0a;border:0;border-radius:60px;padding:16px 26px;font:500 12px var(--sans);letter-spacing:.24em;text-transform:uppercase;cursor:pointer;box-shadow:0 18px 40px -12px rgba(0,0,0,.8);transition:transform .3s}
+.admb:hover{transform:translateY(-3px)}
+body.admin .adm{display:flex}
+.adm{position:fixed;z-index:90;top:0;right:0;bottom:0;width:min(440px,100vw);flex-direction:column;background:linear-gradient(180deg,#171717,#0b0b0b);border-left:1px solid rgba(255,255,255,.14);box-shadow:-30px 0 80px -20px rgba(0,0,0,.8);transform:translateX(104%);visibility:hidden;transition:transform .5s cubic-bezier(.2,.8,.2,1),visibility 0s .5s}
+.adm.open{transform:none;visibility:visible;transition-delay:0s}
+.adm-h{display:flex;align-items:center;justify-content:space-between;padding:calc(18px + env(safe-area-inset-top,0px)) 22px 16px;border-bottom:1px solid rgba(255,255,255,.12)}
+.adm-h b{font:italic 500 26px var(--serif)}
+.adm-h button{background:none;border:0;color:#fff;font-size:30px;line-height:1;cursor:pointer;padding:4px 8px}
+.adm-b{flex:1;overflow-y:auto;padding:20px 22px 30px;display:grid;gap:26px;align-content:start;overscroll-behavior:contain}
+.adm-b h4{font:500 10px var(--sans);letter-spacing:.32em;text-transform:uppercase;opacity:.65;margin-bottom:12px}
+.adm-b p.help{font-size:13px;line-height:1.65;color:rgba(255,255,255,.72);font-weight:300}
+.adm select,.adm input[type=text],.adm textarea{width:100%;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);border-radius:10px;color:#fff;font:400 16px var(--sans);padding:12px 14px;outline:none}
+.adm select option{color:#000}
+.adm textarea{resize:vertical;min-height:84px;font-size:14px}
+.adm select:focus,.adm input:focus,.adm textarea:focus{border-color:rgba(255,255,255,.6)}
+.row{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.sm{background:transparent;border:1px solid rgba(255,255,255,.3);color:#fff;border-radius:40px;padding:9px 14px;font:500 10px var(--sans);letter-spacing:.2em;text-transform:uppercase;cursor:pointer;transition:background .25s,color .25s}
+.sm:hover{background:#fff;color:#0a0a0a}
+.sm.solid{background:#fff;color:#0a0a0a;border-color:#fff}
+.sm.solid:hover{background:#d8d8d8}
+.sm.danger:hover{background:#ff5a5a;border-color:#ff5a5a;color:#fff}
+.drop{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;text-align:center;border:1.5px dashed rgba(255,255,255,.4);border-radius:14px;padding:30px 16px;cursor:pointer;transition:background .3s,border-color .3s}
+.drop:hover,.drop.over{background:rgba(255,255,255,.07);border-color:#fff}
+.drop b{font:italic 500 22px var(--serif)}
+.drop small{font-size:12px;opacity:.65;letter-spacing:.04em}
+.drop input{display:none}
+.prog{font-size:12px;letter-spacing:.14em;opacity:.8;min-height:18px;margin-top:10px}
+.tg{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.th{position:relative;aspect-ratio:1;border-radius:8px;overflow:hidden;background:#222}
+.th img{width:100%;height:100%;object-fit:cover}
+.th .tb{position:absolute;left:4px;right:4px;bottom:4px;display:flex;justify-content:space-between;gap:4px}
+.th .tb button{flex:1;background:rgba(0,0,0,.72);border:0;color:#fff;border-radius:6px;padding:6px 0;font-size:13px;cursor:pointer;backdrop-filter:blur(4px)}
+.th .tb button:hover{background:#fff;color:#000}
+.th .tb button.x:hover{background:#ff5a5a;color:#fff}
+.th i{position:absolute;top:5px;left:5px;background:#fff;color:#000;font:500 9px var(--sans);letter-spacing:.14em;padding:3px 7px;border-radius:20px;font-style:normal}
+.adm-f{padding:16px 22px calc(18px + env(safe-area-inset-bottom,0px));border-top:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.03)}
+.stat{font-size:12px;letter-spacing:.1em;opacity:.8;margin-bottom:12px;line-height:1.6}
+.stat em{font-style:normal;color:#ffd166}
+.adm-f .btn{width:100%;justify-content:center;background:#fff;color:#000;padding:16px 20px}
+.adm-f .row{margin-top:12px}
+.toast{position:fixed;left:50%;bottom:calc(26px + env(safe-area-inset-bottom,0px));transform:translate(-50%,20px);z-index:120;background:#fff;color:#0a0a0a;padding:14px 24px;border-radius:60px;font:500 12px var(--sans);letter-spacing:.14em;opacity:0;pointer-events:none;transition:.4s;max-width:90vw;text-align:center}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+
+/* ---------- BUDDY CHATBOT ---------- */
+.bd-fab{position:fixed;z-index:70;right:clamp(14px,2.4vw,34px);bottom:calc(clamp(14px,2.4vw,34px) + env(safe-area-inset-bottom,0px));display:flex;align-items:center;gap:10px;border:0;cursor:pointer;color:#fff;border-radius:60px;padding:8px 22px 8px 8px;font:500 12px var(--sans);letter-spacing:.24em;text-transform:uppercase;background:linear-gradient(180deg,#3a3a3a 0%,#161616 48%,#000 52%,#111 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,.3),0 16px 36px -10px rgba(0,0,0,.8);transition:transform .35s}
+.bd-fab:hover{transform:translateY(-3px)}
+.bd-av{width:40px;height:40px;border-radius:50%;background:#fff;color:#000;display:flex;align-items:center;justify-content:center;font:italic 500 24px var(--serif);flex:none;position:relative}
+.bd-av::after{content:"";position:absolute;right:0;bottom:1px;width:10px;height:10px;border-radius:50%;background:#3ddc84;border:2px solid #000}
+body.admin .bd-fab{bottom:calc(clamp(14px,2.4vw,34px) + 74px + env(safe-area-inset-bottom,0px))}
+.bd-tip{position:fixed;z-index:70;right:clamp(14px,2.4vw,34px);bottom:calc(clamp(14px,2.4vw,34px) + 66px + env(safe-area-inset-bottom,0px));max-width:240px;background:#fff;color:#0a0a0a;border-radius:16px 16px 4px 16px;padding:12px 16px;font-size:13px;line-height:1.5;box-shadow:0 14px 40px -10px rgba(0,0,0,.7);opacity:0;transform:translateY(10px);pointer-events:none;transition:.5s}
+.bd-tip.show{opacity:1;transform:none;pointer-events:auto;cursor:pointer}
+body.admin .bd-tip{bottom:calc(clamp(14px,2.4vw,34px) + 140px)}
+.bd{position:fixed;z-index:95;right:clamp(14px,2.4vw,34px);bottom:calc(clamp(14px,2.4vw,34px) + env(safe-area-inset-bottom,0px));width:min(390px,calc(100vw - 28px));height:min(600px,calc(100svh - 40px));display:flex;flex-direction:column;background:#0f0f0f;color:#fff;border:1px solid rgba(255,255,255,.16);border-radius:22px;overflow:hidden;box-shadow:0 30px 90px -20px #000;transform:translateY(24px) scale(.96);transform-origin:bottom right;opacity:0;visibility:hidden;transition:transform .4s cubic-bezier(.2,.8,.2,1),opacity .3s,visibility 0s .4s}
+.bd.open{transform:none;opacity:1;visibility:visible;transition-delay:0s}
+.bd-h{display:flex;align-items:center;gap:12px;padding:14px 16px;background:linear-gradient(180deg,#3a3a3a 0%,#161616 48%,#000 52%,#111 100%);border-bottom:1px solid rgba(255,255,255,.14)}
+.bd-h .bd-av{width:42px;height:42px}
+.bd-h b{display:block;font:italic 500 22px var(--serif);line-height:1}
+.bd-h small{display:block;margin-top:3px;font-size:10px;letter-spacing:.2em;text-transform:uppercase;opacity:.65}
+.bd-h button{margin-left:auto;background:none;border:0;color:#fff;font-size:28px;line-height:1;cursor:pointer;padding:2px 8px}
+.bd-m{flex:1;overflow-y:auto;padding:16px 14px;display:flex;flex-direction:column;gap:10px;overscroll-behavior:contain;scroll-behavior:smooth}
+.bd-b{max-width:86%;padding:11px 15px;border-radius:16px;font-size:14px;line-height:1.55;font-weight:300;animation:bdin .35s both;white-space:pre-line}
+.bd-b.bot{background:#1d1d1d;border-bottom-left-radius:4px;align-self:flex-start}
+.bd-b.me{background:#fff;color:#0a0a0a;border-bottom-right-radius:4px;align-self:flex-end;font-weight:400}
+@keyframes bdin{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.bd-t{align-self:flex-start;background:#1d1d1d;border-radius:16px;border-bottom-left-radius:4px;padding:14px 16px;display:flex;gap:5px}
+.bd-t i{width:6px;height:6px;border-radius:50%;background:#fff;opacity:.4;animation:bdt 1s infinite}
+.bd-t i:nth-child(2){animation-delay:.15s}.bd-t i:nth-child(3){animation-delay:.3s}
+@keyframes bdt{50%{opacity:1;transform:translateY(-3px)}}
+.bd-c{display:flex;flex-wrap:wrap;gap:8px;align-self:flex-start;animation:bdin .35s both}
+.bd-c button,.bd-c a{background:transparent;border:1px solid rgba(255,255,255,.35);color:#fff;border-radius:60px;padding:9px 15px;font:500 11px var(--sans);letter-spacing:.14em;text-transform:uppercase;cursor:pointer;text-decoration:none;transition:background .25s,color .25s}
+.bd-c button:hover,.bd-c a:hover{background:#fff;color:#0a0a0a}
+.bd-c .pri{background:#fff;color:#0a0a0a;border-color:#fff}
+.bd-c .pri:hover{background:#d8d8d8}
+.bd-f{display:flex;gap:8px;padding:12px;border-top:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.03)}
+.bd-f input{flex:1;min-width:0;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);border-radius:60px;color:#fff;font:400 16px var(--sans);padding:11px 16px;outline:none}
+.bd-f input:focus{border-color:rgba(255,255,255,.6)}
+.bd-f button{flex:none;width:44px;height:44px;border-radius:50%;border:0;background:#fff;color:#000;font-size:18px;cursor:pointer}
+@media(max-width:600px){.bd{right:7px;bottom:7px;width:calc(100vw - 14px);height:calc(100svh - 14px);border-radius:18px}.bd-fab span{display:none}.bd-fab{padding:8px}}
+@media(prefers-reduced-motion:reduce){.bd-b,.bd-c,.bd-t i{animation:none}}
+@media(prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important}html{scroll-behavior:auto}.hero .kick,.hero h1 span,.hero p.lead,.hstats{opacity:1;transform:none}}
+
+/* ---------- ROBO (3D buddy icon) ---------- */
+.rb{display:block;overflow:visible}
+.rbf{animation:rbfloat 4.2s ease-in-out infinite}
+.rbe{transform-box:fill-box;transform-origin:center;animation:rbblink 5.5s infinite}
+.rba{animation:rbglow 2.2s ease-in-out infinite}
+@keyframes rbfloat{50%{transform:translateY(-3px)}}
+@keyframes rbblink{0%,92%,100%{transform:scaleY(1)}95%{transform:scaleY(.12)}}
+@keyframes rbglow{50%{opacity:.15}}
+@media(prefers-reduced-motion:reduce){.rbf,.rbe,.rba{animation:none}}
+/* ---------- WHATSAPP (brand green, glossy) ---------- */
+.wa{background:linear-gradient(180deg,#5cf08f 0%,#25d366 48%,#0e8c4f 100%)!important;
+  box-shadow:inset 0 1.5px 0 rgba(255,255,255,.55),inset 0 -3px 6px rgba(0,0,0,.22),0 0 0 1px rgba(255,255,255,.22),0 14px 28px -8px rgba(18,140,126,.7)!important}
+.wa::before{border:1.5px solid rgba(37,211,102,.55)!important}
+.wa svg{filter:drop-shadow(0 1px 1px rgba(0,0,0,.25))}
+
+/* ---- Buddy: robo 3D avatar + WhatsApp button ---- */
+.bd-av{width:46px;height:46px;background:radial-gradient(circle at 35% 25%,#434954,#0a0a0a 75%);border:1px solid rgba(255,255,255,.35);color:#fff}
+.bd-av svg{width:38px;height:38px}
+.bd-av::after{border-color:#0c0c0c}
+.bd-h .bd-av{width:44px;height:44px}
+.bd-fab{padding:6px 22px 6px 6px;bottom:calc(clamp(14px,2.4vw,34px) + 74px + env(safe-area-inset-bottom,0px))}
+.bd-fab:hover .bd-av{box-shadow:0 0 0 4px rgba(53,214,245,.16)}
+.bd-tip{bottom:calc(clamp(14px,2.4vw,34px) + 148px + env(safe-area-inset-bottom,0px))}
+body.admin .bd-tip{bottom:calc(clamp(14px,2.4vw,34px) + 148px)}
+.wa{position:fixed;z-index:70;right:clamp(14px,2.4vw,34px);bottom:calc(clamp(14px,2.4vw,34px) + env(safe-area-inset-bottom,0px));width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;transition:transform .4s}
+.wa:hover{transform:scale(1.1)}
+.wa::before{content:"";position:absolute;inset:-8px;border-radius:50%;animation:waPulse 2.6s ease-out infinite;pointer-events:none}
+@keyframes waPulse{from{transform:scale(.85);opacity:1}to{transform:scale(1.35);opacity:0}}
+body.admin .wa{display:none}
+@media(max-width:600px){.bd-fab{padding:6px}.bd-fab .bd-av{display:flex;width:48px;height:48px}}
+@media(prefers-reduced-motion:reduce){.wa::before{animation:none}}
+</style>
+</head>
+<body>
+<svg id="rbDefs" width="0" height="0" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true" focusable="false"><defs>
+<linearGradient id="rbHead" x1="0" y1="0" x2="0.35" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset=".45" stop-color="#d9dde3"/><stop offset="1" stop-color="#7d838d"/></linearGradient>
+<linearGradient id="rbEar" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#f4f5f7"/><stop offset=".5" stop-color="#9aa0aa"/><stop offset="1" stop-color="#4b5059"/></linearGradient>
+<linearGradient id="rbVisor" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a2f38"/><stop offset=".55" stop-color="#0b0d11"/><stop offset="1" stop-color="#000"/></linearGradient>
+<linearGradient id="rbBody" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5a606a"/><stop offset=".5" stop-color="#1c1f25"/><stop offset="1" stop-color="#050607"/></linearGradient>
+<linearGradient id="rbGloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".85"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+<radialGradient id="rbEye" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#fff"/><stop offset=".45" stop-color="#9ff4ff"/><stop offset="1" stop-color="#19b9d6"/></radialGradient>
+<radialGradient id="rbBall" cx=".35" cy=".3" r=".75"><stop offset="0" stop-color="#fff"/><stop offset=".4" stop-color="#8ff0ff"/><stop offset="1" stop-color="#0e8fb0"/></radialGradient>
+<radialGradient id="rbShadow" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#000" stop-opacity=".55"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>
+<filter id="rbGlow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="2.2"/></filter>
+<linearGradient id="waG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5cf08f"/><stop offset=".5" stop-color="#25d366"/><stop offset="1" stop-color="#0e8c4f"/></linearGradient>
+</defs></svg>
+
+<header id="hd">
+  <a class="hl" id="homeA" href="index.html">&larr; <span>Home</span></a>
+  <a class="logo" id="homeB" href="index.html"><b>STORIES</b><small>BY RAJANI</small></a>
+  <a class="hr" id="enqA" href="vows-home.html#contact">Enquire</a>
+</header>
+
+<section class="hero" id="hero" aria-label="Portfolio introduction">
+  <div class="hs" id="hs"><div class="sl"></div><div class="sl"></div></div>
+  <div class="hshade"></div><div class="hgrain"></div>
+  <div class="fl" id="fl" aria-hidden="true"></div>
+  <div class="vfw" aria-hidden="true"><i class="a"></i><i class="b"></i><i class="c"></i><i class="d"></i>
+    <div class="m l"><u></u>REC</div><div class="m r"><span id="mA">f/2.8</span><span id="mS">1/250s</span><span id="mI">ISO 100</span></div></div>
+  <div class="hc">
+    <p class="kick">The portfolio</p>
+    <h1 aria-label="Every event, one story at a time"><span class="ln" aria-hidden="true"><span>Every <em class="rw"><b>event</b></em>,</span></span><span class="ln" aria-hidden="true"><span><em>one story at a time</em></span></span></h1>
+    <p class="lead">Quiet glances, loud laughter and everything in between. Browse the work by celebration and find the frames that feel like yours.</p>
+    <button class="btn hbtn" type="button" id="hGo">Explore the work <span>&darr;</span></button>
+  </div>
+  <div class="hstats"><div><b id="stP">0</b><small>Photographs</small></div><div><b id="stE">0</b><small>Event types</small></div><div><b>500+</b><small>Weddings</small></div></div>
+</section>
+
+<nav class="filt" aria-label="Filter portfolio by event"><div class="in" id="tabs" role="tablist"></div></nav>
+
+<main class="gal" id="gal"><div class="gin" id="gin"></div></main>
+
+<footer class="foot">
+  <div class="fcta"><h2>Let&rsquo;s tell your <em>story</em></h2><a class="btn" id="enqB" href="index.html#contact">Enquire now <span>&#8599;</span></a></div>
+  <div class="fbar">
+    <span>&copy; 2026 Stories by Rajani. All rights reserved.</span>
+    <span><a href="https://www.instagram.com/storiesbyrajini/" target="_blank" rel="noopener">Instagram</a><a href="#" id="toTop">Back to top &uarr;</a><button class="own" id="ownBtn" type="button" aria-label="Owner: manage photos">Manage</button></span>
+  </div>
+</footer>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <div class="top"><div class="cap" id="lbCap"></div><button type="button" id="lbX" aria-label="Close">&times;</button></div>
+  <button class="nav pv" type="button" id="lbP" aria-label="Previous photo">&larr;</button>
+  <img id="lbI" alt="">
+  <button class="nav nx" type="button" id="lbN" aria-label="Next photo">&rarr;</button>
+  <div class="bot" id="lbC"></div>
+</div>
+
+<button class="admb" id="admB" type="button">Manage photos</button>
+<aside class="adm" id="adm" aria-label="Manage portfolio photos">
+  <div class="adm-h"><b>Manage portfolio</b><button type="button" id="admX" aria-label="Close panel">&times;</button></div>
+  <div class="adm-b">
+    <p class="help">Pick an event, add photos, then press <strong>Save portfolio file</strong>. You&rsquo;ll download an updated page with your photos built in. Upload that file to your website to make the changes live. Until then, changes are only visible on this device.</p>
+    <div>
+      <h4>1 &middot; Event</h4>
+      <select id="aSel" aria-label="Event"></select>
+      <div class="row">
+        <button class="sm" type="button" id="aUp" title="Move event earlier">&uarr; Up</button>
+        <button class="sm" type="button" id="aDn" title="Move event later">&darr; Down</button>
+        <button class="sm" type="button" id="aRn">Rename</button>
+        <button class="sm danger" type="button" id="aDel">Delete</button>
+      </div>
+      <div class="row"><input type="text" id="aNew" placeholder="New event name, e.g. Baby Shower" maxlength="40" style="flex:1;min-width:0"><button class="sm solid" type="button" id="aAdd">Add event</button></div>
+    </div>
+    <div>
+      <h4>2 &middot; Add photos</h4>
+      <label class="drop" id="aDrop"><b>Drop photos here</b><small>or tap to choose from your device. Large photos are resized automatically.</small><input type="file" id="aFile" accept="image/*" multiple></label>
+      <div class="prog" id="aProg" aria-live="polite"></div>
+      <h4 style="margin-top:20px">Or paste image links</h4>
+      <textarea id="aUrls" placeholder="One image link per line (https://...)"></textarea>
+      <div class="row"><button class="sm solid" type="button" id="aUrlGo">Add links</button></div>
+    </div>
+    <div>
+      <h4>3 &middot; Photos in this event <span id="aCnt"></span></h4>
+      <div class="tg" id="aGrid"></div>
+    </div>
+  </div>
+  <div class="adm-f">
+    <div class="stat" id="aStat"></div>
+    <button class="btn" type="button" id="aSave">Save portfolio file <span>&darr;</span></button>
+    <div class="row"><button class="sm" type="button" id="aReset">Discard my changes</button><button class="sm" type="button" id="aExit">Exit owner mode</button></div>
+  </div>
+</aside>
+<div class="toast" id="toast" role="status"></div>
+<button class="bd-fab" id="bdFab" type="button" aria-label="Chat with Buddy"><span class="bd-av"><svg class="rb " viewBox="0 0 120 120" aria-hidden="true" focusable="false">
+<ellipse cx="60" cy="112" rx="30" ry="5" fill="url(#rbShadow)"/>
+<g class="rbf">
+<rect x="56.5" y="9" width="7" height="20" rx="3.5" fill="url(#rbEar)"/>
+<circle class="rba" cx="60" cy="9" r="9" fill="#35d6f5" opacity=".55" filter="url(#rbGlow)"/>
+<circle cx="60" cy="9" r="5.6" fill="url(#rbBall)"/><circle cx="58.2" cy="7.2" r="1.7" fill="#fff" opacity=".9"/>
+<rect x="9" y="50" width="15" height="26" rx="7" fill="url(#rbEar)"/><rect x="96" y="50" width="15" height="26" rx="7" fill="url(#rbEar)" transform="rotate(180 103.5 63)"/>
+<rect x="12.5" y="57" width="4" height="12" rx="2" fill="#35d6f5" opacity=".9"/><rect x="103.5" y="57" width="4" height="12" rx="2" fill="#35d6f5" opacity=".9"/>
+<path d="M44 90h32v9a6 6 0 0 1-6 6H50a6 6 0 0 1-6-6z" fill="url(#rbBody)"/>
+<path d="M30 100c0-4 3-7 7-7h46c4 0 7 3 7 7v6c0 3-2 5-5 5H35c-3 0-5-2-5-5z" fill="url(#rbBody)" stroke="#fff" stroke-opacity=".25" stroke-width=".8"/>
+<circle cx="60" cy="102.5" r="2.4" fill="#35d6f5"/>
+<rect x="19" y="27" width="82" height="66" rx="27" fill="url(#rbHead)" stroke="#fff" stroke-opacity=".7" stroke-width="1"/>
+<rect x="19" y="27" width="82" height="66" rx="27" fill="none" stroke="#000" stroke-opacity=".18" stroke-width="2" transform="translate(0 1.2)" clip-path="inset(60% 0 0 0)"/>
+<rect x="28.5" y="40" width="63" height="36" rx="18" fill="url(#rbVisor)" stroke="#000" stroke-opacity=".5" stroke-width="1.5"/>
+<rect x="29.5" y="41" width="61" height="34" rx="17" fill="none" stroke="#fff" stroke-opacity=".18"/>
+<g class="rbe"><ellipse cx="46" cy="58" rx="9.5" ry="9.5" fill="#35d6f5" opacity=".55" filter="url(#rbGlow)"/><ellipse cx="46" cy="58" rx="6.2" ry="7" fill="url(#rbEye)"/></g>
+<g class="rbe"><ellipse cx="74" cy="58" rx="9.5" ry="9.5" fill="#35d6f5" opacity=".55" filter="url(#rbGlow)"/><ellipse cx="74" cy="58" rx="6.2" ry="7" fill="url(#rbEye)"/></g>
+<path d="M33 46c10-5 34-6 48-1 3 1 2 4-1 4-12-3-30-3-44 2-3 1-5-3-3-5z" fill="url(#rbGloss)" opacity=".55"/>
+<rect x="52" y="82" width="16" height="3.2" rx="1.6" fill="#2a2f38" opacity=".75"/>
+<path d="M27 38c10-9 36-12 58-6 4 1 3 5-1 4-22-5-42-2-52 7-3 3-8-1-5-5z" fill="url(#rbGloss)" opacity=".75"/>
+</g></svg></span><span>Ask Buddy</span></button>
+<a class="wa" id="wa" href="vows-home.html#contact" target="_blank" rel="noopener" aria-label="Chat on WhatsApp" title="Chat on WhatsApp"><svg viewBox="0 0 24 24" width="32" height="32" fill="#fff" aria-hidden="true" focusable="false"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 14.9L2 22l5.25-1.37A9.9 9.9 0 1 0 12.04 2zm0 1.8a8.1 8.1 0 1 1-4.1 15.07l-.3-.18-3.1.8.83-3.03-.2-.31A8.1 8.1 0 0 1 12.04 3.8zM8.6 7.5c-.2 0-.5.07-.75.35-.26.28-1 .98-1 2.4s1.03 2.78 1.17 2.97c.14.2 2 3.2 4.95 4.35 2.45.97 2.95.78 3.48.73.53-.05 1.7-.7 1.94-1.37.24-.67.24-1.25.17-1.37-.07-.12-.26-.2-.55-.34-.28-.15-1.7-.84-1.97-.93-.26-.1-.45-.15-.64.14-.2.28-.74.93-.9 1.12-.17.2-.33.22-.62.07-.28-.14-1.2-.44-2.28-1.4-.85-.76-1.42-1.7-1.58-1.98-.17-.28-.02-.44.12-.58.13-.13.28-.33.42-.5.14-.17.2-.28.28-.47.1-.2.05-.36-.02-.5-.07-.15-.64-1.58-.9-2.16-.23-.5-.47-.5-.64-.52z"/></svg></a>
+<div class="bd-tip" id="bdTip">Hi, I&rsquo;m Buddy! Need help finding an event or booking Rajani?</div>
+<section class="bd" id="bd" role="dialog" aria-label="Chat with Buddy" aria-hidden="true">
+  <div class="bd-h"><span class="bd-av"><svg class="rb " viewBox="0 0 120 120" aria-hidden="true" focusable="false">
+<ellipse cx="60" cy="112" rx="30" ry="5" fill="url(#rbShadow)"/>
+<g class="rbf">
+<rect x="56.5" y="9" width="7" height="20" rx="3.5" fill="url(#rbEar)"/>
+<circle class="rba" cx="60" cy="9" r="9" fill="#35d6f5" opacity=".55" filter="url(#rbGlow)"/>
+<circle cx="60" cy="9" r="5.6" fill="url(#rbBall)"/><circle cx="58.2" cy="7.2" r="1.7" fill="#fff" opacity=".9"/>
+<rect x="9" y="50" width="15" height="26" rx="7" fill="url(#rbEar)"/><rect x="96" y="50" width="15" height="26" rx="7" fill="url(#rbEar)" transform="rotate(180 103.5 63)"/>
+<rect x="12.5" y="57" width="4" height="12" rx="2" fill="#35d6f5" opacity=".9"/><rect x="103.5" y="57" width="4" height="12" rx="2" fill="#35d6f5" opacity=".9"/>
+<path d="M44 90h32v9a6 6 0 0 1-6 6H50a6 6 0 0 1-6-6z" fill="url(#rbBody)"/>
+<path d="M30 100c0-4 3-7 7-7h46c4 0 7 3 7 7v6c0 3-2 5-5 5H35c-3 0-5-2-5-5z" fill="url(#rbBody)" stroke="#fff" stroke-opacity=".25" stroke-width=".8"/>
+<circle cx="60" cy="102.5" r="2.4" fill="#35d6f5"/>
+<rect x="19" y="27" width="82" height="66" rx="27" fill="url(#rbHead)" stroke="#fff" stroke-opacity=".7" stroke-width="1"/>
+<rect x="19" y="27" width="82" height="66" rx="27" fill="none" stroke="#000" stroke-opacity=".18" stroke-width="2" transform="translate(0 1.2)" clip-path="inset(60% 0 0 0)"/>
+<rect x="28.5" y="40" width="63" height="36" rx="18" fill="url(#rbVisor)" stroke="#000" stroke-opacity=".5" stroke-width="1.5"/>
+<rect x="29.5" y="41" width="61" height="34" rx="17" fill="none" stroke="#fff" stroke-opacity=".18"/>
+<g class="rbe"><ellipse cx="46" cy="58" rx="9.5" ry="9.5" fill="#35d6f5" opacity=".55" filter="url(#rbGlow)"/><ellipse cx="46" cy="58" rx="6.2" ry="7" fill="url(#rbEye)"/></g>
+<g class="rbe"><ellipse cx="74" cy="58" rx="9.5" ry="9.5" fill="#35d6f5" opacity=".55" filter="url(#rbGlow)"/><ellipse cx="74" cy="58" rx="6.2" ry="7" fill="url(#rbEye)"/></g>
+<path d="M33 46c10-5 34-6 48-1 3 1 2 4-1 4-12-3-30-3-44 2-3 1-5-3-3-5z" fill="url(#rbGloss)" opacity=".55"/>
+<rect x="52" y="82" width="16" height="3.2" rx="1.6" fill="#2a2f38" opacity=".75"/>
+<path d="M27 38c10-9 36-12 58-6 4 1 3 5-1 4-22-5-42-2-52 7-3 3-8-1-5-5z" fill="url(#rbGloss)" opacity=".75"/>
+</g></svg></span><div><b>Buddy</b><small>Stories by Rajani guide</small></div><button type="button" id="bdX" aria-label="Close chat">&times;</button></div>
+  <div class="bd-m" id="bdM" aria-live="polite"></div>
+  <form class="bd-f" id="bdF" autocomplete="off"><input type="text" id="bdI" placeholder="Type a message..." maxlength="200" aria-label="Message Buddy"><button type="submit" aria-label="Send">&rarr;</button></form>
+</section>
+
+
+<script id="pdata" type="application/json">{"events": [{"n": "Weddings", "p": ["https://storage.onecloudpro.com/images/storiesbyrajiniphotography/473db075f70c11df4fd2e1d831f345ecb290d11a.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/321c614a15694ddf6654783a7a988784133f82e9.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/6f308f6b81a4f34647b0a5d742fb82989eb25abd.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/51921b3c6dca28c2e720ec528832d43d412d94be.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/af3175837df506319086357bb65a352f8814fedc.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/5662e10efc82a5166315bccc97105fdaea520cc8.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/06c4b591cd8446c5acca588eef3dbcb89185987d.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/5ef812700a9c376f88c1e61777170111034dd723.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/b4ee066025decd01f5ee59ca3cbfe1d8635eb140.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/264f9eae907af92dfb7a8970cf12b008dec99380.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/1dba049d0f5aa33133aac7160ca8a2ef5c3dd96d.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/ff20d39da056bd272fb4cfc505197f49a861b8eb.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/850775e1b68aee1e8c6fbbaae96434429a305e27.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/e1aa724c797d886d6ad6ef5acc6661139199af82.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/e0d1e0e69ea827c01f393421632e1f0f8f5fd4d7.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/5fec150c6e3ec0c19443e4d6ec7d8c95faabcad6.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/9d48d8e55eb4cd525f61c4e964da8916aec0aceb.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/234e1f955c87b74e952b33962590b017d6c626cc.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/87e42d11cb7db67970db7730d8b1f8a48a33af90.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/c1a365790d257b2af969bde10d7af831dae95eac.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/f5d3bbfaccc8d80bd5244ef60de0c5c23aa0ac7c.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/edb9d54daf8b1ef063fbd28e5ef0287ad2a9b0cb.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/4452408765eb33e0995b0e8b40fc155dcfed5e1f.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/5a5ae636098f48001d6128097851ce37e5c8a9d3.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/8806841d06578f74d5ad013f99ff6d29862b4a2f.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/c0258ace3e7bde2a8a452dd7905acf2c8489539f.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/9d8a2e5d6090707f9d9e365e8aa08e52f14c3ff2.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/bb120e34b10b684f540cadefe3c51169a980ddc4.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/c169635f1e6e597ac125496695d59b70d5edb8e0.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/f490ca6aef02815d58e26ace038a3994b8bf9cb3.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg"]}, {"n": "Pre-Wedding", "p": ["https://storage.onecloudpro.com/images/storiesbyrajiniphotography/aa261d4e67c3d61931cd977282e7e6a6b09ee0ba.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/b639664bf67f27b87d9e1943d2c7bcf1b2073e30.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/75c89bf508397f9a1222ec0b7ed868f9a2de0b14.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/1849f5ccba24106c6d82684dfe7dd15ef123f95f.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/9ea9061c7379b88f064b1fd4e404539fb89df8c6.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/cc10b209cf1aac7e63b107448e37324d8b1ab35f.JPG?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/c8a95f1cb14459b21e10a6c8a0a60e3e70e626f0.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/f0580a9c9f47166a98ced6b03853f12dd7e28c46.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/b84dd9c6a015a3c99d0eb29f1651b02d5564a7ad.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/c0011dae5384728a010eec8fb5307021cea07942.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/5b1acaf3a63c34cb8f6c1e57dab3c9c9d4a63967.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/cacfba7bd2fabca5af372cdafacff918b60b5de3.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/9d57b035160e5f0772e4f07614e8f7d06904860a.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/cb84ab8b408b530a24cba6961ededb6d0e1be501.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/958a17849b3fa472708d7d9d71503fd018170c51.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/b56f250860974d3849d9e1251c84f0f5e6f004a4.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/b8855fd31b7d207e609fc4d5c00d75e795ccc714.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/2a28d3c77b60e3da913c528d527692cc719bef94.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/3e9ab45c547e5b6b296842177f93a1b6670cc92e.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/cab11584369857452d7edd73a5ed85008ff95e80.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/327e9bf3007eca9684dd12230d6071276549c2c3.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/1b968278c0b9e228e21c742fad8767e73d77cb0d.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/2d0b4a954a18ae7563f593b9300853bb2c5a5966.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/319bfffad8980bdf5c047bc88295a104558596c6.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/a1c9ebc0fe108f1f43e4875d00c09412a92f97fe.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/1df319a9b29319a32baf9c9f717abe9ac444209c.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/28fd6bbc51bcfaba6a9eb57f36317f58acbeb098.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/96227e32d74ea2fdd90bcde4d31bb87c5b3d16d0.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/64e5da2e7ddd8abdd44068d134b71556d4620cf8.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/15f9d7aba5600b5b23bd7fb303cb1b20bda7f9e9.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/0bfa0c3f2b52c7bc0cced7e6fa59e9ebe91ecc6b.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg"]}, {"n": "Engagements", "p": ["https://storage.onecloudpro.com/images/storiesbyrajiniphotography/96d73610f892fdd654543269a828206db5c7cddc.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/06f368dc752d5491b2a80024f898d0ea729c133a.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/01679608d293467901f0daddfa939afefbd221ef.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/05d086033d3b60d3772ecb1245248a356fa78e6d.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/7b51e9a3c2e54065cb631bf522d3936c2fc1cbf3.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/f2b7c0a7eebf93b443dd5933f5a6d338d5f7cce9.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/b2005e52e03831dee5366b3032100144255b5a91.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/a7e493c2704d51edaa0224b9b8773a066c0cc50f.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/7a88f9b7cb15f286d1c73e1cb34c1e48e93a5456.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/ee34e7530dee229aecb77ca976e0f74e23609499.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/fda6ba774a685941f72416afd8373151722e4303.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/aedc0a745f629a1465d97c78486cfdcba08d3b4f.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/3c55abc0007db62ffbfe636ff5ff0ee46f2899bc.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/aeafa98cbf667d9e652c435dbd5125d781982760.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/05744c676c6a09b9e140b88b61c5e6590504489f.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/b8bd146df02fda4d807c8675f0b57322aecee5fb.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/2a429e72a22b930c2a6341b7a8ee009c762d48bb.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/794594c4e998b512a185051988fade437193310b.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/31dd9d74d63dd81522553dc7f51b58f4f5c20a54.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/4788f00fa7a586b02d45581712a8f82504aae197.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/0ec4c07a9b499eda6747e450f869a24b68113ae4.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/0699f863b9015503a3b45e76092f31cbc191a0b8.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/2717e9190b99c4549885e7617d5cb1777d52a304.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/0b4faf95ea0252ca4e5ec6b9c8f5539fdba5c4c1.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/5d2004fa9b141b09709de0298f529af6fc0db48a.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/753d7de6fb417d0d79d908273a876f5f145bf47b.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/5c5b8f293020228307c88c4b860d88ecb627a0ad.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/d561e3e2994f3d9d4c39c172cfbde44d96ec85e7.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/519f2045a3178a9d5809028900ea44088980804d.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/af4e2759fe1180f1df39c38511403bf467c118a0.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/0253403aa33a43f8ed41621f0fdeb9e411ee3e92.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/a3d98ce519e1b1ac6aae50311610844a0bc3d9bd.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/8fcac5837a5b5ed4744cb58df2539fcf3b1d1515.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg"]}, {"n": "Haldi", "p": ["https://storage.onecloudpro.com/images/storiesbyrajiniphotography/5490fe2e37fc524cddb9b8e8fbfe20ba08c2766b.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/72ec7d3111124346ce467c0714f2fc8707f891f0.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/2d11d7e6ca888e64559e5e71937af925a5439117.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/3b519aad3c7f719ea45eb83fdba25fa2dfdac209.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/205fbf8be1690a4a91c885b65110f45b3955d267.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/f1cbcb2c7d9a6f13e3c0d36d67fa542db02adf2f.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/d46fd75ddc225308689c63c10d74e3c6877eae70.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/cdeb6a9d0122651f597d43999292afa2113eb1de.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/321c614a15694ddf6654783a7a988784133f82e9.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/905068bb8fd516e80a5cfe2b611dbd4715ac903f.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/cac78446b4e71f0a16e3071116cd179d71b3afd9.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/5c9fb0fada8d2db622cefbe9c14f41a278034b45.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/82c0aa509efb2543588b07cbd6bd6008d1090d70.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/3543286b5df739b5abf33fe0c83f13a2ba79e28b.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/6725be9b242a2feb30e7e17d8ed209a92474d454.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/390df00d3805d84b72ea1f853e50790855fa6c69.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/2ccb1027d9faceeb1aa40e0cd1d30de6d811b2b8.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/5c55cc7516542c0b1d9a88cf9a2b07502c736fea.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/11904d17e6f174cec7f73bb35109f5e31e47bc4f.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/2618e4778d2190472efa3e05db8dfe67749a407e.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/262e57e781a64b3a68d9ede239f63fbf8ab7f94a.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/214f8fca1921b059f74d4580b667bf4fb563a668.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/9ba7ba15ecb555f382e6b523107e6ab7db7203fe.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/2a791102253e1740747e03472517a87c9f320c56.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/50a19682d45a06f99fdb5efe5db4da9a68dca227.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/d62b8b6a8fc64f9f86521cecad452909e8af1b1c.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/2c6069255616e7b13cf80ffb0dbe89d9051baf0e.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/eaf682426fde3a09f614245deb1c1456623e0cac.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/3d099f68f5bcc65b71e14de2ab6931982222afa1.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/53a38db2ad2a5cacde184585d71cef28cea2693c.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg"]}, {"n": "Mehendi", "p": []}, {"n": "Sangeeth", "p": ["https://storage.onecloudpro.com/images/storiesbyrajiniphotography/5d6bc3a58686d451a44cc556e3983a91253726a6.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/335c97de164983b5584e09912c28fe18305a0216.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/f83a91e0cffef40b94273ca1fe40402414b5819f.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/26c650b492183128a75c52825b1985f45658f35b.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/78c4776effade9c6ab0d2e8edf0a9cc8cca0cef6.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/8af455fc4f1b82feb55e41f963524bcb08192323.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/59030d47cbbd74b837ff627fa6cb8eb2abb4788d.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/284d39d0b1061a986cc335f9a887c5dfe33ef9a4.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/ae716ea30dca9da67f23509db809651acd489525.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/6b076889a60be7eb0d25b979a94589018c783148.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/7e1307b909f81d4a984f95e3983e7932b184c245.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/02a284f6622a8cce65c758c270b42cfaa630c1d3.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/b93c81f198e5937e3084c4c2d70da77401442be0.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/866c0423ffeb20d64df5c672e1b86469ffd80352.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/9e411c1a603d811a37f63a20a1804b771eb23674.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/55fad7537899922dc7e701b369532adab08e16ef.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/06b2fb5f2be44125e2430056e6b0e6436a03674a.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/3859665fa492b1b03c3992c3f8e9d9f797bee003.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/362b37be409f6168beeed520ca4a8b85ec4b5bc7.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/6b50cb04906f5e2a87b22ace38fa3974265b987d.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/3de5f8eae10d73558ea0a4b56434619e5c859629.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/fcb61f1fbbea8797e5af323ba5df55a2be439d80.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/1712a6cbecd59529405c3b210d31e7da384454ca.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/774a34a00447718ce96614029bb87b58efca9cdc.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/840273ed3b675efcb1df2c545d4199118a463c5c.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/9b4a8827b0d73d14ba7082cd1c1b7e0ca9dbbabe.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/060e9c3366a4eb723e75516ce4e66eac2408b84e.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/86362499f6db5705d833a9f21f026a6de0acbc8e.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/077535affc3263b5f4082288932e6a11401904ea.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/1fff61b8d0b8123d608a7eee4463176c8491879b.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/c6b9a5146147db9a9a8d36759ad56bed83e7053b.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg"]}, {"n": "Reception", "p": ["https://storage.onecloudpro.com/images/storiesbyrajiniphotography/6f7536b9647d48ea643f9e98a0e1d02eff7bd61c.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/d066c16f9eaa1c0837b37dbbbef527f2fb8da986.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/8ce54a61786a73e05e3f62e2eaf1b7052b76c3f4.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/e1bf0d87faee4b7b55d3c5565e9881a493d5a662.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/efc13f568bb3cc4fc9af3e5fd3765d92b1c07ab7.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/4eb086cb7117a9d8c2c7f85af575578f1b956de8.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/42cde89a7c4ced0819d5d0dc42c7b7a09e052b82.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/8effcc217eb71a2f6739ccefbcd2ca25184eb0fd.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/2bbd185da760e680ba59780d703b24ca35f56ae6.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/a066f0eb032b337621078680e3c129b9974d7f15.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/728b4ec60b0d0c5ec1d1dae26b937323a14835eb.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/bb885442fd0967785922e16f3289d7597b6af885.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/16926f91be871d66bdfd2aebbb36e9109afb07da.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/8adfaa30998402bfdee02de91b8994570b7618b0.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/0765c83c114917acdedd7a6b937810c4f1189a84.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/a168966e37ad4c58183abade194a2e9ce9113e37.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/ec05146ec930f54fea3b8acfc618f96872ceccbe.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/86b3128b51beb68f496e93c4446aa64ab3f41e53.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/1dfcc850ffa113ce3a2ffc9a3ab292e50d1a63da.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/39e0c57d35a5cb5eff106b8a23081f9b4b717a02.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/6a38252c3e27a13f101013290a8d2e9f34d03f81.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/b8feec5b9187167daee248f217c1d88984e95fc1.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/946e2ce4d2c221a38a49c1a328e437ab680952cf.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/1451c3482cc86bbe34eafdeedcc685197b979f14.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/ac41746f92a50bc0c2802a37a69638015be2d11a.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/38216a6cc9b75d6b807c73434c9a523c100b3d14.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/7d4772c7d24437bdae5f435e2a50e180a3ebc429.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/9b80167d54da21eedcb68e3b69fbffab80d28893.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/9a02613f3e609bf85d84e1e63eb5ec43430e2d25.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/3f1eac1370a38dbfd8284756f016c4b02d5e0863.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/8f9e2372fc520a7126c74879a2536b11b53abbda.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/dbfc3929426b69ba04ef4f37053c062bebcfc949.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg", "https://storage.onecloudpro.com/images/storiesbyrajiniphotography/a325c3b1e0f72a456522ededfe125a6c09d7269c.jpg?w=2048&dpr=1&sharp_amount=27&sharp_radius=2&format=jpeg"]}]}</script>
+<script>
+/* ============ SETTINGS ============ */
+const HOME='index.html';           /* your main page file / URL */
+/* Photos live in the JSON block above (id="pdata"). Easiest way to edit: open this page with #admin at the end
+   of the address (or click "Manage" in the footer), add photos, then press "Save portfolio file". */
+
+/* Capture the clean page source BEFORE anything is rendered (used by "Save portfolio file"). */
+const SRC='<!DOCTYPE html>\n'+document.documentElement.outerHTML;
+
+const $=id=>document.getElementById(id);
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const RM=matchMedia('(prefers-reduced-motion:reduce)').matches;
+const ORIG=JSON.stringify(JSON.parse($('pdata').textContent));
+let data=JSON.parse(ORIG);
+const admin=location.hash==='#admin';
+let active='all',started=false;
+
+/* links back to the main site */
+['homeA','homeB'].forEach(i=>$(i).href=HOME);['enqA','enqB'].forEach(i=>$(i).href=HOME+'#contact');
+
+/* header height -> sticky offset */
+const setHH=()=>document.documentElement.style.setProperty('--hh',$('hd').offsetHeight+'px');
+setHH();addEventListener('resize',setHH);addEventListener('load',setHH);
+
+/* ============ RENDER ============ */
+const visible=()=>data.events.filter(e=>admin||e.p.length);
+const total=()=>data.events.reduce((a,e)=>a+e.p.length,0);
+
+function count(el,n){
+  if(RM){el.textContent=n;return}
+  const t0=performance.now(),from=+el.textContent||0;
+  (function f(t){const p=Math.min((t-t0)/1100,1);el.textContent=Math.round(from+(n-from)*(1-Math.pow(1-p,3)));if(p<1)requestAnimationFrame(f)})(t0);
+}
+function stats(){count($('stP'),total());count($('stE'),data.events.filter(e=>e.p.length).length)}
+
+function tabs(){
+  const box=$('tabs');box.innerHTML='';
+  const mk=(id,label,n,empty)=>{
+    const b=document.createElement('button');b.type='button';b.className='chip'+(empty?' empty':'');b.setAttribute('role','tab');
+    b.setAttribute('aria-selected',active===id);b.innerHTML=esc(label)+'<sup>'+n+'</sup>';
+    b.onclick=()=>{active=id;tabs();gallery(true)};box.appendChild(b)};
+  mk('all','All',total(),false);
+  visible().forEach(e=>mk(e.n,e.n,e.p.length,!e.p.length));
+  const a=box.querySelector('[aria-selected="true"]');if(a&&a.scrollIntoView)a.scrollIntoView({inline:'center',block:'nearest',behavior:RM?'auto':'smooth'});
+}
+
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.08,rootMargin:'0px 0px -4% 0px'});
+
+function fig(src,ev,i,list,delay){
+  const f=document.createElement('figure');f.className='ph';f.tabIndex=0;f.setAttribute('role','button');
+  f.setAttribute('aria-label','Open '+ev.n+' photo '+(i+1));f.style.transitionDelay=(delay*70)+'ms';
+  const im=new Image();im.alt=ev.n+' photograph '+(i+1);im.decoding='async';im.loading='lazy';im.referrerPolicy='no-referrer';
+  im.onload=()=>{im.classList.add('ld');f.classList.add('ok')};im.onerror=()=>f.classList.add('bad');im.src=src;
+  f.appendChild(im);
+  const c=document.createElement('figcaption');c.textContent=ev.n;f.appendChild(c);
+  const p=document.createElement('span');p.className='pl';p.textContent='+';p.setAttribute('aria-hidden','true');f.appendChild(p);
+  const open=()=>openLB(list,i);f.onclick=open;f.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();open()}};
+  io.observe(f);return f;
+}
+
+/* Balanced masonry: lays photos into the shortest column and, in the preview,
+   adds extra photos from the same event until the column bottoms line up (no ragged gaps). */
+const RC={};
+const ratio=src=>RC[src]||(RC[src]=new Promise(r=>{const i=new Image();i.referrerPolicy='no-referrer';i.onload=()=>r((i.naturalHeight/i.naturalWidth)||.75);i.onerror=()=>r(null);i.src=src}));
+const colN=()=>innerWidth<=1000?2:3;
+function buildMas(m,ev,list,limit){
+  const N=colN(),gap=innerWidth<=420?8:14;
+  const pool=limit?ev.p.slice(0,limit+9):ev.p;
+  Promise.all(pool.map(ratio)).then(rs=>{
+    if(!m.isConnected)return;
+    const cw=((m.clientWidth||900)-(N-1)*gap)/N,g=gap/cw;
+    const items=pool.map((src,i)=>({src,i,r:rs[i]})).filter(x=>x.r);
+    const cols=Array.from({length:N},()=>({h:0,els:[]}));
+    const short=()=>cols.reduce((a,b)=>b.h<a.h?b:a);
+    const place=it=>{const c=short();c.els.push(it);c.h+=it.r+g};
+    const base=limit?Math.min(limit,items.length):items.length;
+    items.slice(0,base).forEach(place);
+    if(limit){let k=base;while(k<items.length){const hs=cols.map(c=>c.h);if(Math.max(...hs)-Math.min(...hs)<.3)break;place(items[k++])}}
+    m.innerHTML='';let n=0;
+    cols.forEach(c=>{const d=document.createElement('div');d.className='mcol';c.els.forEach(it=>d.appendChild(fig(it.src,ev,it.i,list,(n++)%6)));m.appendChild(d)});
+  });
+}
+
+function section(ev,idx,limit){
+  const s=document.createElement('section');s.className='evs';
+  const n=String(idx+1).padStart(2,'0'),shown=limit?ev.p.slice(0,limit):ev.p;
+  const more=limit&&ev.p.length>limit;
+  s.innerHTML='<div class="evh"><div><span class="no">'+n+' / '+String(data.events.length).padStart(2,'0')+'</span><h2>'+esc(ev.n)+'</h2></div><div class="ct"><span>'+ev.p.length+(ev.p.length===1?' photograph':' photographs')+'</span></div></div>';
+  if(more){const b=document.createElement('button');b.className='vall';b.type='button';b.textContent='View all '+ev.p.length;
+    b.onclick=()=>{active=ev.n;tabs();gallery(true)};s.querySelector('.ct').appendChild(b)}
+  if(!ev.p.length){const d=document.createElement('div');d.className='none';d.textContent='No photographs here yet. Use "Manage photos" to add some.';s.appendChild(d);return s}
+  const m=document.createElement('div');m.className='mas';
+  const list=ev.p.map(src=>({src,ev:ev.n}));
+  s.appendChild(m);buildMas(m,ev,list,limit);return s;
+}
+
+let lastN=colN();
+addEventListener('resize',()=>{if(colN()!==lastN){lastN=colN();gallery()}});
+
+function gallery(scroll){
+  const g=$('gin');g.innerHTML='';g.classList.remove('fade');void g.offsetWidth;g.classList.add('fade');
+  const vis=visible();
+  if(!vis.length||(!admin&&!total())){g.innerHTML='<div class="none">Photographs coming soon.</div>'}
+  else if(active==='all'){vis.forEach(ev=>g.appendChild(section(ev,data.events.indexOf(ev),6)))}
+  else{const ev=data.events.find(e=>e.n===active);if(ev)g.appendChild(section(ev,data.events.indexOf(ev),0));else{active='all';return gallery(scroll)}}
+  if(scroll){const top=$('gal').getBoundingClientRect().top+scrollY-($('hd').offsetHeight+70);if(scrollY>top)scrollTo({top,behavior:RM?'auto':'smooth'})}
+}
+
+/* ============ HERO ============ */
+const shuffle=a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
+const pool=()=>data.events.flatMap(e=>e.p.map(src=>({src,ev:e.n})));
+const word=n=>n.split(' & ')[0];
+const APS=['f/2.8','f/1.8','f/4','f/2','f/5.6'],SHS=['1/250s','1/500s','1/125s','1/1000s','1/320s'],ISO=['ISO 100','ISO 200','ISO 400','ISO 100','ISO 160'];
+const SL=[...document.querySelectorAll('#hs .sl')];
+let seq=[],hi=-1,flip=0,htimer=null,SLIDE=6000;
+
+function goEvent(name){
+  active=name;tabs();gallery(false);
+  const f=document.querySelector('.filt'),top=f.getBoundingClientRect().top+scrollY-$('hd').offsetHeight+1;
+  scrollTo({top,behavior:RM?'auto':'smooth'});
+}
+$('hGo').onclick=()=>{const f=document.querySelector('.filt'),top=f.getBoundingClientRect().top+scrollY-$('hd').offsetHeight+1;scrollTo({top,behavior:RM?'auto':'smooth'})};
+
+function heroLists(){}
+function swapWord(txt){
+  const b=$('rw');if(b.textContent===txt)return;
+  if(RM){b.textContent=txt;return}
+  b.classList.add('out');
+  setTimeout(()=>{b.textContent=txt;b.classList.remove('out');b.classList.add('pre');void b.offsetWidth;b.classList.remove('pre')},420);
+}
+function showSlide(it,idx,n){
+  const layer=SL[flip],other=SL[1-flip];
+  const im=new Image();im.referrerPolicy='no-referrer';
+  im.onload=()=>{
+    layer.style.backgroundImage='url("'+it.src.replace(/"/g,'%22')+'")';
+    layer.classList.remove('kb');void layer.offsetWidth;layer.classList.add('kb','on');other.classList.remove('on');flip=1-flip;
+    $('mA').textContent=APS[idx%5];$('mS').textContent=SHS[idx%5];$('mI').textContent=ISO[idx%5];
+    schedule(n);
+  };
+  im.onerror=()=>schedule(n,400);
+  im.src=it.src;
+}
+function schedule(n,d){clearTimeout(htimer);if(n<2||RM)return;htimer=setTimeout(nextSlide,d||SLIDE)}
+function nextSlide(){
+  if(document.hidden){schedule(2,1500);return}
+  seq=visible().filter(e=>e.p.length);
+  if(!seq.length)return;
+  hi=(hi+1)%seq.length;
+  const e=seq[hi],last=lastPick[e.n];let src=e.p[Math.floor(Math.random()*e.p.length)];
+  if(e.p.length>1&&src===last)src=e.p[(e.p.indexOf(src)+1)%e.p.length];
+  lastPick[e.n]=src;
+  showSlide({src,ev:e.n},hi,seq.length);
+}
+const lastPick={};
+function jumpTo(name){
+  const i=visible().filter(e=>e.p.length).findIndex(e=>e.n===name);if(i<0)return;
+  clearTimeout(htimer);hi=i-1;nextSlide();
+}
+function floats(){
+  const box=$('fl');box.innerHTML='';
+  const p=shuffle(visible().filter(e=>e.p.length)).map(e=>({src:e.p[Math.floor(Math.random()*e.p.length)],ev:e.n}));if(!p.length)return;
+  p.slice(0,4).forEach((it,i)=>{
+    const d=document.createElement('div');d.className='fc fc'+(i+1);d.setAttribute('role','presentation');
+    d.innerHTML='<div class="fi"><img alt="" loading="lazy" referrerpolicy="no-referrer"></div>';
+    d.querySelector('img').src=it.src;    d.onclick=()=>goEvent(it.ev);box.appendChild(d)});
+}
+function hero(){
+  heroLists();floats();
+  hi=-1;nextSlide();
+  /* pointer + scroll parallax */
+  if(!RM){
+    const h=$('hero');let tx=0,ty=0,raf=0;
+    const set=()=>{raf=0;h.style.setProperty('--mx',tx.toFixed(3));h.style.setProperty('--my',ty.toFixed(3))};
+    h.addEventListener('pointermove',e=>{if(e.pointerType==='touch')return;const r=h.getBoundingClientRect();tx=(e.clientX-r.left)/r.width-.5;ty=(e.clientY-r.top)/r.height-.5;if(!raf)raf=requestAnimationFrame(set)});
+    h.addEventListener('pointerleave',()=>{tx=ty=0;if(!raf)raf=requestAnimationFrame(set)});
+    let tk=0;addEventListener('scroll',()=>{if(tk)return;tk=requestAnimationFrame(()=>{tk=0;const y=Math.min(scrollY,innerHeight*1.2);h.style.setProperty('--sy',y.toFixed(1))})},{passive:true});
+  }
+  document.addEventListener('visibilitychange',()=>{if(!document.hidden&&seq.length>1)schedule(seq.length,800)});
+}
+
+function renderAll(){
+  if(active!=='all'&&!visible().some(e=>e.n===active))active='all';
+  tabs();gallery(false);stats();if(typeof heroLists==='function'&&started)heroLists();
+}
+
+/* ============ LIGHTBOX ============ */
+let L=[],li=0,x0=null;
+function openLB(list,i){L=list;li=i;show(true);$('lb').classList.add('open');document.body.classList.add('lock');$('lbX').focus()}
+function closeLB(){$('lb').classList.remove('open');if(!$('adm').classList.contains('open'))document.body.classList.remove('lock')}
+function show(first){
+  const it=L[li],im=$('lbI');
+  const set=()=>{im.src=it.src;im.alt=it.ev+' photograph '+(li+1);im.referrerPolicy='no-referrer';im.onload=()=>im.classList.remove('sw')};
+  if(first||RM){set();im.classList.remove('sw')}else{im.classList.add('sw');setTimeout(set,180)}
+  $('lbCap').innerHTML='<span></span><small>Stories by Rajani</small>';$('lbCap').firstChild.textContent=it.ev;
+  $('lbC').textContent=String(li+1).padStart(2,'0')+' / '+String(L.length).padStart(2,'0');
+  [li-1,li+1].forEach(k=>{if(L[k]){const p=new Image();p.referrerPolicy='no-referrer';p.src=L[k].src}});
+  $('lbP').style.visibility=$('lbN').style.visibility=L.length>1?'visible':'hidden';
+}
+const step=d=>{if(L.length<2)return;li=(li+d+L.length)%L.length;show(false)};
+$('lbX').onclick=closeLB;$('lbP').onclick=()=>step(-1);$('lbN').onclick=()=>step(1);
+$('lb').addEventListener('click',e=>{if(e.target===$('lb'))closeLB()});
+$('lb').addEventListener('touchstart',e=>x0=e.touches[0].clientX,{passive:true});
+$('lb').addEventListener('touchend',e=>{if(x0===null)return;const d=e.changedTouches[0].clientX-x0;if(Math.abs(d)>50)step(d<0?1:-1);x0=null});
+addEventListener('keydown',e=>{
+  if($('lb').classList.contains('open')){if(e.key==='Escape')closeLB();else if(e.key==='ArrowRight')step(1);else if(e.key==='ArrowLeft')step(-1);return}
+  if(e.key==='Escape'&&$('adm').classList.contains('open'))admClose();
+});
+$('toTop').onclick=e=>{e.preventDefault();scrollTo({top:0,behavior:RM?'auto':'smooth'})};
+
+/* ============ OWNER MODE ============ */
+const toast=m=>{const t=$('toast');t.textContent=m;t.classList.add('show');clearTimeout(toast.t);toast.t=setTimeout(()=>t.classList.remove('show'),3200)};
+$('ownBtn').onclick=()=>{location.hash='#admin';location.reload()};
+addEventListener('hashchange',()=>{if((location.hash==='#admin')!==admin)location.reload()});
+
+/* drafts survive refreshes (stored in this browser only) */
+const idb=()=>new Promise((res,rej)=>{const r=indexedDB.open('sbr-portfolio',1);r.onupgradeneeded=()=>r.result.createObjectStore('kv');r.onsuccess=()=>res(r.result);r.onerror=()=>rej(r.error)});
+const idbGet=async k=>{try{const d=await idb();return await new Promise((res,rej)=>{const q=d.transaction('kv').objectStore('kv').get(k);q.onsuccess=()=>res(q.result);q.onerror=()=>rej()})}catch(_){return undefined}};
+const idbSet=async(k,v)=>{try{const d=await idb();await new Promise((res,rej)=>{const t=d.transaction('kv','readwrite');v===null?t.objectStore('kv').delete(k):t.objectStore('kv').put(v,k);t.oncomplete=res;t.onerror=rej})}catch(_){}};
+let sv;const saveDraft=()=>{clearTimeout(sv);sv=setTimeout(()=>idbSet('draft',JSON.stringify(data)),250)};
+
+const cur=()=>data.events.find(e=>e.n===$('aSel').value)||data.events[0];
+function admRefresh(keep){
+  const sel=$('aSel'),was=keep||sel.value;sel.innerHTML='';
+  data.events.forEach(e=>{const o=document.createElement('option');o.value=e.n;o.textContent=e.n+' ('+e.p.length+')';sel.appendChild(o)});
+  if(data.events.some(e=>e.n===was))sel.value=was;
+  const ev=cur(),g=$('aGrid');g.innerHTML='';
+  $('aCnt').textContent=ev?'('+ev.p.length+')':'';
+  if(ev)ev.p.forEach((src,i)=>{
+    const d=document.createElement('div');d.className='th';
+    const im=new Image();im.src=src;im.alt='';im.loading='lazy';im.referrerPolicy='no-referrer';d.appendChild(im);
+    if(i===0){const c=document.createElement('i');c.textContent='FIRST';d.appendChild(c)}
+    const tb=document.createElement('div');tb.className='tb';
+    const bF=document.createElement('button');bF.type='button';bF.title='Make first';bF.textContent='\u2605';bF.onclick=()=>{ev.p.unshift(ev.p.splice(i,1)[0]);changed(ev.n)};
+    const bX=document.createElement('button');bX.type='button';bX.className='x';bX.title='Remove';bX.textContent='\u00d7';bX.onclick=()=>{ev.p.splice(i,1);changed(ev.n)};
+    if(i>0)tb.appendChild(bF);tb.appendChild(bX);d.appendChild(tb);g.appendChild(d)});
+  const bytes=data.events.reduce((a,e)=>a+e.p.reduce((b,s)=>b+(s.length>400?s.length:0),0),0),mb=(bytes/1048576).toFixed(1);
+  const dirty=JSON.stringify(data)!==ORIG;
+  $('aStat').innerHTML=total()+' photos &middot; '+data.events.length+' events'+(bytes?' &middot; uploads &asymp; '+mb+' MB':'')+(dirty?'<br><em>Unsaved changes on this device</em>':'<br>No changes yet');
+}
+function changed(keep){saveDraft();admRefresh(keep);renderAll()}
+const admOpen=()=>{$('adm').classList.add('open');document.body.classList.add('lock');admRefresh()};
+function admClose(){$('adm').classList.remove('open');if(!$('lb').classList.contains('open'))document.body.classList.remove('lock')}
+$('admB').onclick=admOpen;$('admX').onclick=admClose;
+$('aSel').onchange=()=>admRefresh();
+$('aAdd').onclick=()=>{
+  const n=$('aNew').value.trim().replace(/\s+/g,' ');if(!n)return toast('Type an event name first');
+  if(data.events.some(e=>e.n.toLowerCase()===n.toLowerCase()))return toast('That event already exists');
+  data.events.push({n,p:[]});$('aNew').value='';changed(n);toast('Event added');
+};
+$('aNew').addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();$('aAdd').click()}});
+$('aRn').onclick=()=>{
+  const ev=cur();if(!ev)return;const n=(prompt('Rename event',ev.n)||'').trim();if(!n||n===ev.n)return;
+  if(data.events.some(e=>e!==ev&&e.n.toLowerCase()===n.toLowerCase()))return toast('That name is already used');
+  if(active===ev.n)active=n;ev.n=n;changed(n);
+};
+$('aDel').onclick=()=>{
+  const ev=cur();if(!ev)return;
+  if(!confirm('Delete "'+ev.n+'"'+(ev.p.length?' and its '+ev.p.length+' photos':'')+'?'))return;
+  data.events.splice(data.events.indexOf(ev),1);changed();toast('Event deleted');
+};
+const mv=d=>{const ev=cur(),i=data.events.indexOf(ev),j=i+d;if(j<0||j>=data.events.length)return;data.events.splice(i,1);data.events.splice(j,0,ev);changed(ev.n)};
+$('aUp').onclick=()=>mv(-1);$('aDn').onclick=()=>mv(1);
+
+function shrink(file){return new Promise((res,rej)=>{
+  const u=URL.createObjectURL(file),im=new Image();
+  im.onload=()=>{const M=1800,r=Math.min(1,M/Math.max(im.naturalWidth,im.naturalHeight)),c=document.createElement('canvas');
+    c.width=Math.max(1,Math.round(im.naturalWidth*r));c.height=Math.max(1,Math.round(im.naturalHeight*r));
+    const x=c.getContext('2d');x.fillStyle='#fff';x.fillRect(0,0,c.width,c.height);x.drawImage(im,0,0,c.width,c.height);
+    URL.revokeObjectURL(u);res(c.toDataURL('image/jpeg',.82))};
+  im.onerror=()=>{URL.revokeObjectURL(u);rej()};im.src=u})}
+async function addFiles(files){
+  const ev=cur();if(!ev)return;const fs=[...files].filter(f=>/^image\//.test(f.type));
+  if(!fs.length)return toast('Please choose image files');
+  let ok=0,bad=0;
+  for(let i=0;i<fs.length;i++){
+    $('aProg').textContent='Adding '+(i+1)+' of '+fs.length+'\u2026';
+    try{ev.p.push(await shrink(fs[i]));ok++}catch(_){bad++}
+  }
+  $('aProg').textContent=ok+' added'+(bad?', '+bad+' could not be read (try JPG or PNG)':'');
+  changed(ev.n);$('aFile').value='';
+}
+$('aFile').onchange=e=>addFiles(e.target.files);
+const dz=$('aDrop');
+['dragenter','dragover'].forEach(t=>dz.addEventListener(t,e=>{e.preventDefault();dz.classList.add('over')}));
+['dragleave','drop'].forEach(t=>dz.addEventListener(t,e=>{e.preventDefault();dz.classList.remove('over')}));
+dz.addEventListener('drop',e=>addFiles(e.dataTransfer.files));
+$('aUrlGo').onclick=()=>{
+  const ev=cur(),u=$('aUrls').value.split(/\s+/).map(s=>s.trim()).filter(s=>/^https?:\/\/\S+$/i.test(s));
+  if(!u.length)return toast('Paste at least one link starting with https://');
+  u.forEach(s=>{if(!ev.p.includes(s))ev.p.push(s)});$('aUrls').value='';changed(ev.n);toast(u.length+' link(s) added');
+};
+
+$('aSave').onclick=()=>{
+  const json=JSON.stringify(data).replace(/</g,'\\u003c');
+  const html=SRC.replace(/(<script id="pdata" type="application\/json">)[\s\S]*?(<\/script>)/,(m,a,b)=>a+json+b);
+  const blob=new Blob([html],{type:'text/html'}),a=document.createElement('a');
+  a.href=URL.createObjectURL(blob);a.download='portfolio.html';document.body.appendChild(a);a.click();a.remove();
+  setTimeout(()=>URL.revokeObjectURL(a.href),4000);
+  toast('Saved! Upload portfolio.html to your website to go live.');
+  if(blob.size>25*1048576)setTimeout(()=>toast('Large file ('+(blob.size/1048576).toFixed(0)+' MB). Consider fewer photos or image links.'),3400);
+};
+$('aReset').onclick=async()=>{if(!confirm('Discard all changes made on this device?'))return;await idbSet('draft',null);location.reload()};
+$('aExit').onclick=()=>{history.replaceState(null,'',location.pathname+location.search);location.reload()};
+
+/* ============ BUDDY (guide chatbot) ============ */
+/* Fill these in so Buddy can offer direct contact buttons. Leave empty to hide that button. */
+const BUDDY={whatsapp:'',phone:'',email:'',instagram:'https://www.instagram.com/storiesbyrajini/'};
+(function(){const a=document.getElementById('wa');if(!a)return;
+  if(BUDDY.whatsapp){a.href='https://wa.me/'+BUDDY.whatsapp.replace(/\D/g,'')+'?text='+encodeURIComponent('Hi Stories by Rajani, I would like to enquire about my event.')}
+  else{a.href=HOME+'#contact';a.removeAttribute('target')}})();
+(function(){
+  const M=$('bdM'),panel=$('bd'),fab=$('bdFab'),tip=$('bdTip'),inp=$('bdI');
+  let opened=false,book=null,busy=false;
+  const evList=()=>visible().filter(e=>e.p.length);
+  const SYN={weddings:['wedding','marriage'],'pre-wedding':['pre wedding','prewedding','pre-wedding','couple shoot'],engagements:['engagement','ring','roka'],haldi:['haldi','turmeric'],mehendi:['mehendi','mehndi','henna'],sangeeth:['sangeeth','sangeet','sangeet'],reception:['reception']};
+  const norm=t=>t.toLowerCase().replace(/[^a-z0-9\- ]/g,' ').replace(/\s+/g,' ').trim();
+  function scrollEnd(){setTimeout(()=>{M.scrollTop=M.scrollHeight},30)}
+  function bubble(t,who){const d=document.createElement('div');d.className='bd-b '+who;d.textContent=t;M.appendChild(d);scrollEnd();return d}
+  function chips(list){
+    const w=document.createElement('div');w.className='bd-c';
+    list.forEach(c=>{
+      let el;
+      if(c.href){el=document.createElement('a');el.href=c.href;if(/^https?:/.test(c.href)){el.target='_blank';el.rel='noopener'}}
+      else{el=document.createElement('button');el.type='button'}
+      el.textContent=c.t;if(c.pri)el.className='pri';
+      if(c.go)el.onclick=()=>{w.remove();c.go()};
+      w.appendChild(el)});
+    M.appendChild(w);scrollEnd();
+  }
+  function say(lines,after){
+    busy=true;const arr=[].concat(lines);let i=0;
+    const typ=document.createElement('div');typ.className='bd-t';typ.innerHTML='<i></i><i></i><i></i>';
+    (function next(){
+      M.appendChild(typ);scrollEnd();
+      setTimeout(()=>{
+        typ.remove();bubble(arr[i],'bot');i++;
+        if(i<arr.length)next();else{busy=false;if(after)after()}
+      },RM?0:520);
+    })();
+  }
+  function user(t){M.querySelectorAll('.bd-c').forEach(c=>c.remove());bubble(t,'me')}
+
+  /* ---- flows ---- */
+  const mainChips=()=>chips([{t:'Explore events',go:()=>{user('Explore events');showEvents()}},{t:'Book Rajani',pri:1,go:()=>{user('I want to book');startBook()}},{t:'About the work',go:()=>{user('About the work');about()}}]);
+  function welcome(){say(["Hi, I'm Buddy 👋 Rajani's guide for this portfolio.","I can show you her work by event, or help you get in touch for a booking. Where shall we start?"],mainChips)}
+  function showEvents(){
+    const ev=evList();
+    say("Here's everything Rajani has photographed. Tap an event and I'll take you straight to it:",()=>{
+      chips(ev.map(e=>({t:e.n+' ('+e.p.length+')',go:()=>{user(e.n);openEvent(e.n)}})).concat([{t:'Book Rajani',pri:1,go:()=>{user('Book Rajani');startBook()}}]))});
+  }
+  function openEvent(name){
+    const e=evList().find(x=>x.n===name);if(!e)return showEvents();
+    say(["Taking you to "+e.n+" ("+e.p.length+" photographs). Scroll to browse, and tap any photo to view it full size."],()=>{
+      goEvent(e.n);if(innerWidth<=600)closeBuddy();
+      chips([{t:'See another event',go:()=>{user('Another event');showEvents()}},{t:'Book this event',pri:1,go:()=>{user('Book '+e.n);startBook(e.n)}}])});
+  }
+  function about(){
+    say(["Stories by Rajani is a Hyderabad based studio for wedding photography and cinematic films. Every event gets its own story, from quiet glances to loud laughter.","Browse by event or tell me what you're planning and I'll point you to the right place."],mainChips);
+  }
+  function contactChips(msg){
+    const l=[];
+    if(BUDDY.whatsapp)l.push({t:'WhatsApp Rajani',pri:1,href:'https://wa.me/'+BUDDY.whatsapp.replace(/\D/g,'')+(msg?'?text='+encodeURIComponent(msg):'')});
+    l.push({t:'Open enquiry form',pri:!BUDDY.whatsapp,href:HOME+'#contact'});
+    if(BUDDY.phone)l.push({t:'Call',href:'tel:'+BUDDY.phone.replace(/[^\d+]/g,'')});
+    if(BUDDY.email)l.push({t:'Email',href:'mailto:'+BUDDY.email+(msg?'?subject='+encodeURIComponent('Booking enquiry')+'&body='+encodeURIComponent(msg):'')});
+    if(BUDDY.instagram)l.push({t:'Instagram',href:BUDDY.instagram});
+    if(msg)l.push({t:'Copy my message',go:()=>{copy(msg);bubble('Copied! Paste it wherever you reach Rajani.','bot');chips(contactChips(msg).filter(c=>c.t!=='Copy my message'))}});
+    return l;
+  }
+  function copy(t){try{navigator.clipboard.writeText(t)}catch(_){const a=document.createElement('textarea');a.value=t;document.body.appendChild(a);a.select();try{document.execCommand('copy')}catch(__){}a.remove()}}
+  function contact(){say("The quickest way to book is to message Rajani directly. Want me to put your details together first so you only have to tap send?",()=>chips([{t:'Yes, help me book',pri:1,go:()=>{user('Yes, help me book');startBook()}}].concat(contactChips()))) }
+
+  /* booking mini-flow: name -> event -> date -> place -> summary */
+  function startBook(pre){
+    book={step:'name',ev:pre||''};
+    say("Lovely! A few quick questions so Rajani has what she needs. First, what's your name?");
+  }
+  function bookStep(t){
+    if(book.step==='name'){book.name=t.slice(0,60);book.step='ev';
+      if(book.ev){book.step='date';return say("Nice to meet you, "+book.name+"! You're asking about "+book.ev+". What date is it on? (a rough date or month is fine)")}
+      say("Nice to meet you, "+book.name+"! Which event are you planning?",()=>chips(evList().map(e=>({t:e.n,go:()=>{user(e.n);book.ev=e.n;book.step='date';say('Great choice. What date is it on? (a rough date or month is fine)')}})).concat([{t:'Something else',go:()=>{user('Something else');book.ev='';say('No problem, just type the event name.')}}])));return}
+    if(book.step==='ev'){book.ev=t.slice(0,60);book.step='date';return say('Got it. What date is it on? (a rough date or month is fine)')}
+    if(book.step==='date'){book.date=t.slice(0,60);book.step='place';return say('And where will it be? (city or venue)')}
+    if(book.step==='place'){book.place=t.slice(0,80);
+      const msg='Hi Rajani, I would like to book you for '+(book.ev||'an event')+'.\nName: '+book.name+'\nDate: '+book.date+'\nLocation: '+book.place+'\nI found you through your portfolio.';
+      book=null;
+      say(["Perfect, here's your enquiry:\n\n"+msg,"Send it to Rajani using any option below. She'll get back to you about availability and packages."],()=>chips(contactChips(msg)));
+    }
+  }
+
+  /* ---- free text ---- */
+  function reply(t){
+    const q=norm(t);
+    if(book){ if(/^(cancel|stop|exit|never ?mind)$/.test(q)){book=null;return say('No problem, booking cancelled.',mainChips)} return bookStep(t) }
+    /* event match */
+    const ev=evList();
+    for(const e of ev){const k=e.n.toLowerCase();const syn=SYN[k]||[k];if(q.includes(k)||syn.some(s=>q.includes(s)))return openEvent(e.n)}
+    if(/\b(book|booking|hire|reserve|enquir|inquir|available|availability|date free)/.test(q))return startBook();
+    if(/\b(price|cost|rate|rates|package|packages|quote|charge|budget|how much)/.test(q))return say("Every event is different, so Rajani prepares a custom quote based on your date, hours and what you need. Share your details and she'll send packages.",()=>chips([{t:'Help me enquire',pri:1,go:()=>{user('Help me enquire');startBook()}}].concat(contactChips())));
+    if(/\b(contact|call|phone|whatsapp|number|email|reach|talk|message|dm)/.test(q))return contact();
+    if(/\b(instagram|insta)\b/.test(q))return say("You can see more of Rajani's latest work on Instagram.",()=>chips([{t:'Open Instagram',pri:1,href:BUDDY.instagram}]));
+    if(/\b(film|films|video|videos|cinematic|reel)/.test(q))return say("Yes, Rajani also creates cinematic wedding films alongside photography. Mention it when you enquire and she'll include it in your package.",()=>chips([{t:'Book Rajani',pri:1,go:()=>{user('Book Rajani');startBook()}}]));
+    if(/\b(where|location|city|hyderabad|travel|destination)/.test(q))return say("Rajani is based in Hyderabad and happy to travel for destination events. Tell her your location when you enquire.",()=>chips([{t:'Book Rajani',pri:1,go:()=>{user('Book Rajani');startBook()}}]));
+    if(/\b(event|events|work|portfolio|show|see|photos|gallery|categories)/.test(q))return showEvents();
+    if(/\b(who|about|rajani|studio)/.test(q))return about();
+    if(/\b(thanks|thank you|thx|great|awesome|nice|cool)/.test(q))return say("You're welcome! Anything else I can help with?",mainChips);
+    if(/^(hi|hello|hey|hii|namaste|good (morning|evening|afternoon))\b/.test(q))return say('Hello! 😊 What would you like to do?',mainChips);
+    say("I'm not sure I got that, but I can help you explore Rajani's events or book her. What would you like?",mainChips);
+  }
+
+  /* ---- open / close ---- */
+  function openBuddy(){
+    panel.classList.add('open');panel.setAttribute('aria-hidden','false');fab.style.visibility='hidden';tip.classList.remove('show');
+    if(!opened){opened=true;welcome()}
+    setTimeout(()=>{if(innerWidth>600)inp.focus()},350);
+  }
+  function closeBuddy(){panel.classList.remove('open');panel.setAttribute('aria-hidden','true');fab.style.visibility='visible'}
+  window.closeBuddy=closeBuddy;
+  fab.onclick=openBuddy;tip.onclick=openBuddy;$('bdX').onclick=closeBuddy;
+  addEventListener('keydown',e=>{if(e.key==='Escape'&&panel.classList.contains('open')&&!$('lb').classList.contains('open'))closeBuddy()});
+  $('bdF').onsubmit=e=>{e.preventDefault();const t=inp.value.trim();if(!t||busy)return;inp.value='';user(t);reply(t)};
+  setTimeout(()=>{if(!opened&&!admin&&!sessionStorageGet())tip.classList.add('show');setTimeout(()=>tip.classList.remove('show'),9000)},4500);
+  function sessionStorageGet(){try{if(sessionStorage.getItem('bdTip'))return 1;sessionStorage.setItem('bdTip','1')}catch(_){}return 0}
+})();
+
+/* ============ START ============ */
+(async function(){
+  if(admin){
+    document.body.classList.add('admin');
+    const d=await idbGet('draft');
+    if(d){try{const p=JSON.parse(d);if(p&&Array.isArray(p.events))data=p}catch(_){}}
+  }
+  renderAll();hero();started=true;
+  if(admin)setTimeout(()=>toast('Owner mode on. Tap "Manage photos" to add pictures.'),900);
+})();
+</script>
+</body>
+</html>
